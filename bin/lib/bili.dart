@@ -1,18 +1,16 @@
 import 'package:dio/dio.dart';
 
-const int biliRankLimit = 30;
+const int biliLimit = 30;
 
-const biliRankPrompt = '哔哩哔哩热搜榜';
+const biliPrompt = '哔哩哔哩热搜榜';
 
 Future<String> getStringData() async {
   final res = await getJson();
   final list = (res?['data']?['trending']?['list'] as List?)?.cast<Map>();
 
-  if (list == null || list.isEmpty) {
-    return 'NULL';
-  }
-
-  return '$biliRankPrompt\n${list.map((e) => '关键词：${e['keyword']} 热度：${e['heat_score']}').join('\n')}';
+  // 处理数据
+  if (list == null || list.isEmpty) return 'NULL';
+  return '$biliPrompt\n${list.map((e) => e['keyword']).join('\n')}';
 }
 
 Future<Map?> getJson() async {
@@ -21,7 +19,7 @@ Future<Map?> getJson() async {
     final response = await Dio().get(
       'https://api.bilibili.com/x/web-interface/wbi/search/square',
       queryParameters: {
-        'limit': biliRankLimit,
+        'limit': biliLimit,
         'platform': 'web',
         'wts': DateTime.now().millisecondsSinceEpoch ~/ 1000,
       },
@@ -34,7 +32,6 @@ Future<Map?> getJson() async {
       ),
     );
 
-    // 处理 & 返回响应数据
     return response.data;
   } catch (e) {
     // 错误处理
@@ -43,7 +40,6 @@ Future<Map?> getJson() async {
     } else {
       print('Unexpected error: $e');
     }
-
     return null;
   }
 }

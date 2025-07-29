@@ -1,18 +1,20 @@
 import 'package:dio/dio.dart';
 
-Future<void> callDeepSeekAPI({
-  required String apiKey,
-  String model = "deepseek-chat",
-  List<Map<String, String>> messages = const [
-    {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": "Hello!"},
-  ],
+Future callDeepSeekAPI(
+  String apiKey,
+  String sysMsg,
+  String userMsg, {
+  String model = "deepseek-chat", // DeepSeek-V3
   bool stream = false,
 }) async {
-  final dio = Dio();
+  // 构建消息体
+  final List<Map<String, String>> messages = [
+    {"role": "system", "content": sysMsg},
+    {"role": "user", "content": userMsg},
+  ];
 
   try {
-    final response = await dio.post(
+    final response = await Dio().post(
       'https://api.deepseek.com/chat/completions',
       options: Options(
         headers: {
@@ -23,16 +25,14 @@ Future<void> callDeepSeekAPI({
       data: {'model': model, 'messages': messages, 'stream': stream},
     );
 
-    print('Response status: ${response.statusCode}');
-    print('Response data: ${response.data}');
+    return response.data;
   } catch (e) {
+    // 错误处理
     if (e is DioException) {
-      print('Dio error:');
-      print('  Type: ${e.type}');
-      print('  Message: ${e.message}');
-      print('  Response: ${e.response?.data}');
+      print('Dio error: $e');
     } else {
       print('Unexpected error: $e');
     }
+    return null;
   }
 }
