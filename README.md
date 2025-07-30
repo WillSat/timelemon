@@ -46,6 +46,8 @@ TimeLemon 是一个用 `Dart` 编写的工具，用于爬取多个平台的热�
 
 ## 可视化
 
+> 开发中...
+
 [Github Pages](https://willsat.github.io/timelemon/root/)
 
 ## 贡献
