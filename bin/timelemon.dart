@@ -11,18 +11,22 @@ import 'lib/baidu.dart' as baidu;
 import 'lib/douyin.dart' as douyin;
 import 'lib/weibo.dart' as weibo;
 
-const sysMsg = '''你是一个社会事件分析专家，从热搜条目中提取有意义的事件并准确评估其重要性，输出格式：
+const sysMsg = '''你是一个社会事件分析专家，从热搜条目中选取较有意义的事件并评估其重要性，输出格式：
 [{"word":<String:提练热词>,"kind":"社会民生","sign":"important"},"desc":<String:解释描述>]
 1.提练热词必须是经过修饰的名词，尽量不出现句子，务必保证表达准确无歧义，不同榜单存在重复，注意合并热词。例如“我国将出现三大暴雨中心”提炼为“三大暴雨中心”、“中美新一轮经贸会谈最新进展”提炼为“中美新一轮经贸会谈”；
-2.desc解释描述可以对知乎热榜中相对应的信息进行准确概括，不超过30字；没有对应的保持与word提练热词保持一致，不可虚构；
-3.kind分类严谨；sign重要性评估准确。谨慎甄别剔除娱乐新闻；
-4.kind可选：[政治,经济,社会民生,公共安全,文化,科技,其他]；sign可选: [important(值得关注),urgent(对中国影响较大事件),critical(战争级别,尽量不使用)]；
+2.desc解释描述可以对知乎热榜中相对应的信息进行准确概括，不超过100字；没有对应的话，保持与word提练热词保持一致，不可虚构；
+3.kind分类严谨；sign重要性评估准确。甄别剔除娱乐新闻；
+4.kind可选：[政治,经济,社会民生,公共安全,文化,科技,其他]；sign可选: [important(值得关注),urgent(影响较大事件),critical(战争级别,尽量不使用)]；
 5.不出现```json，纯文本单行''';
 
 // DeepSeek API Key
 final apiKey = File('api.key').readAsStringSync();
 
 void main() async {
+  await generateWords();
+}
+
+Future<void> generateWords() async {
   final dio = Dio();
   final String? zhihuData = await zhihu.getStringData(dio);
   final String? biliData = await bili.getStringData(dio);
@@ -51,7 +55,7 @@ void main() async {
       final dt = DateTime.now();
 
       saveToJsonFile(
-        DateFormat('yyyyMMdd#HH').format(dt),
+        '${DateFormat('yyyyMMdd').format(dt)}-${dt.hour ~/ 6 + 1}.json',
         JsonEncoder.withIndent('    ').convert(eventList),
       );
     } catch (e) {
@@ -68,14 +72,15 @@ Future<String> callDeepSeek(String data) async {
     data,
     ifThink: false,
   );
+  // 默认选择第一个回答
   return dsRes?['choices'][0]?['message']['content'];
 }
 
 void saveToJsonFile(String fileName, String contents) {
-  if (!Directory('out').existsSync()) {
-    Directory('out').createSync(recursive: true);
+  if (!Directory('root/jsondata').existsSync()) {
+    Directory('root/jsondata').createSync(recursive: true);
   }
 
-  File('out/$fileName.json').writeAsStringSync(contents);
-  print('Finished! -> out/$fileName.json');
+  File('root/jsondata/$fileName').writeAsStringSync(contents);
+  print('Finished! -> root/jsondata/$fileName.json');
 }
