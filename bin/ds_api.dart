@@ -4,7 +4,7 @@ Future callDeepSeekAPI(
   String apiKey,
   String sysMsg,
   String userMsg, {
-  String model = "deepseek-chat", // DeepSeek-V3
+  bool ifThink = false,
   bool stream = false,
 }) async {
   // 构建消息体
@@ -12,6 +12,8 @@ Future callDeepSeekAPI(
     {"role": "system", "content": sysMsg},
     {"role": "user", "content": userMsg},
   ];
+
+  final model = ifThink ? 'deepseek-reasoner' : 'deepseek-chat';
 
   try {
     final response = await Dio().post(

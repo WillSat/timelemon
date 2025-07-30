@@ -1,0 +1,1435 @@
+{
+    "data": [
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "0_1753851040.172647",
+            "card_id": "Q_1933690399068787181",
+            "card_label": {
+                "type": "boiling",
+                "icon": "https://pic1.zhimg.com/80/v2-a8ec286ae756c2ab8377774b27f8ebc7_1440w.png",
+                "night_icon": "https://pic1.zhimg.com/80/v2-022e7c409e51515f784aa70403aef8d4_1440w.png"
+            },
+            "target": {
+                "id": 1933690399068787181,
+                "title": "如何评价答主「李然于心」在发布武汉大学女学生杨景媛论文造假事件相关视频后遭上门警告？",
+                "url": "https://api.zhihu.com/questions/1933690399068787181",
+                "type": "question",
+                "created": 1753807717,
+                "answer_count": 1342,
+                "follower_count": 3804,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    3878,
+                    4054247,
+                    4054866,
+                    4056642,
+                    4057820
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "当事人@李然于心“杨景媛论文涉嫌造假”相关问题回答：网友质疑武汉大学杨景媛硕士毕业论文疑似使用 AI 完成，是真的吗？如果是真，会受到哪些处罚？武汉大学图书馆杨景媛诬陷事件中，武汉大学该负什么责任？ 当事人@李然于心被深夜上门警告的现场视频："
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNjAwMTQwOSDl9qPEBjAAONwdQAByEzE5MzM2OTAzOTkwNjg3ODcxODF4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "9837 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-ba3d0ae6384b99e4c6bc84cd3868ef14_720w.png"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "1_1753851040.174018",
+            "card_id": "Q_1933799561345855869",
+            "target": {
+                "id": 1933799561345855869,
+                "title": "7 月 30 日堪察加东岸发生 8.8 级地震，我国沿海、日本、美国都将受到海啸影响，具体情况如何？",
+                "url": "https://api.zhihu.com/questions/1933799561345855869",
+                "type": "question",
+                "created": 1753833743,
+                "answer_count": 77,
+                "follower_count": 269,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    2695,
+                    5226,
+                    5548,
+                    65008,
+                    163160
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "自然资源部海啸预警中心发布海啸黄色警报。2025年7月30日7时24分（北京时间），堪察加东岸远海海域（52.53°N,160.16°E）发生8.8级地震，震源深度为20千米（震源参数修订）。 自然资源部海啸预警中心根据最新监测分析结果，此次地震已经引发海啸，预计对我国上海，舟山南，台北东，屏东西，屏东东，台东南，台东北，花莲和宜兰沿岸造成灾害性影响。 堪察加东岸远海8.8级地震引发海啸 预计对我国部分沿岸地区造成灾害性影响 国家海洋环境预报中心 俄罗斯科学院地球物理研究所堪察加分所称，堪察加东岸远海7月30日发生的地震震级为里氏8.7级，这是1952年以来堪察加地震带发生的最强地震。 俄测定机构将堪察加东岸远海地震震级修正为8.7级 中国地震台网正式测定：07月30日08时09分在堪察加东岸远海（北纬51.85度，东经160.25度）发生6.9级地震，震源深度10千米。 堪察加东岸远海发生6.9级地震 震源深度10千米"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNjAwMjg5NSCPwqXEBjAAOI0CQAFyEzE5MzM3OTk1NjEzNDU4NTU4Njl4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "1051 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-526b91b4c9030dd55e2f081550e978ab_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "2_1753851040.177327",
+            "card_id": "Q_1933559617612375448",
+            "target": {
+                "id": 1933559617612375448,
+                "title": "百万网红小英被曝要离婚，其老公称「她一天花 10 万，自己和孩子只是她赚钱的流量」，具体是怎么回事？",
+                "url": "https://api.zhihu.com/questions/1933559617612375448",
+                "type": "question",
+                "created": 1753776536,
+                "answer_count": 201,
+                "follower_count": 581,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    215,
+                    748,
+                    166889,
+                    3326436
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "据大皖新闻，百万网红小英老公“上拉如”爆料，她一天花10万，放话谈好离婚前不会卖货，自己和孩子只是她赚钱的流量。 相关信息显示，小英（杨早英）名下共关联4家企业，其中2家已注销，昆明甄宏文化有限公司、寻甸县小英一家土特产店处于存续状态。 据此前报道，5月21日，百万粉丝网红“小英一家”自曝因生病体重骤降至35公斤引发关注。视频中，她称自己因持续性头疼就医独自住院治疗。 “小英一家”账号由杨早英（原名）运营，杨早英1996年出生于云南昆明某山寨，该账号以记录其家庭生活（如干农活、带娃、喂牛等）为主，早期视频呈现“贫困山区勤劳妇女”形象：丈夫懒惰、家暴，生活拮据需操持家务农活，引发网友共鸣而迅速走红，曾经一年带货总销售额突破1000万元。 小英还曾在直播带货时公开谴责第三者称禁止“小三”购买其带货的食品。 2025年5月11日，小英在直播带货时曾突然情绪失控。当网友提问“小三能不能买食品”时，她当场怒斥：“小三坚决不能吃！你吃了我都要从嘴里给你扒出来！破坏别人家庭的，我真的很讨厌！”小英透露，不与丈夫离婚系因10多年夫妻放不下，想给双方一次机会。 小英要离婚了登上热搜 丈夫“上拉如”5月退出其名下公司 今年5月，自王拾富(小英老公“上拉如”)卸任昆明甄宏文化有限公司监事职务后，二人已无共同关联公司。该公司成立于2024年5月，杨早英担任法定代表人并全资持股，注册资本5万人民币。 冲上热搜！百万网红小英被曝要离婚，老公“上拉如”：她日花10万，拒卖货，自己和孩子只是她赚钱的流量"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk5NTA5OCCYg6LEBjAAOMUEQAJyEzE5MzM1NTk2MTc2MTIzNzU0NDh4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "465 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-789ce637335cd7749988bddfb2c6b530_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "3_1753851040.179861",
+            "card_id": "Q_1933787184659403917",
+            "card_label": {
+                "type": "hot",
+                "icon": "https://pic2.zhimg.com/80/v2-266e83dbee46dce23b718e0531cb7d3a_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-c89199839c237b87e52f010bb5e7d773_1440w.png"
+            },
+            "target": {
+                "id": 1933787184659403917,
+                "title": "中美经贸会谈最新进展公布，继续推动美方暂停的对等关税 24% 如期展期，还有哪些信息值得关注？",
+                "url": "https://api.zhihu.com/questions/1933787184659403917",
+                "type": "question",
+                "created": 1753830792,
+                "answer_count": 128,
+                "follower_count": 341,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    4812,
+                    10722,
+                    33564,
+                    212196,
+                    212714
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "当地时间7月28日至29日，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特及贸易代表格里尔在瑞典斯德哥尔摩举行中美经贸会谈。双方就中美经贸关系、宏观经济政策等双方共同关心的经贸议题开展了坦诚、深入、富有建设性的交流，回顾并肯定了中美日内瓦经贸会谈共识和伦敦框架落实情况。根据会谈共识，双方将继续推动已暂停的美方对等关税24%部分以及中方反制措施如期展期90天。 何立峰表示，中美双方经贸团队要以两国元首6月5日通话重要共识为指引，秉持相互尊重、和平共处、合作共赢的原则，尊重各自关切，进一步巩固共识，加深互信。中方对中美经贸关系的立场是一贯的，中美经贸关系的本质是互利共赢，双方在经贸领域拥有广泛共同利益和广阔合作空间，中美合则两利、斗则俱伤。稳定、健康、可持续的中美经贸关系不仅有利于实现各自的发展目标，也有利于促进世界经济的发展与稳定。下一步，双方应继续按照两国元首通话重要共识，充分发挥好中美经贸磋商机制作用，不断增进共识、减少误解、加强合作，进一步深化对话磋商，不断争取更多双赢结果。 美方表示，稳定的美中经贸关系对两国乃至全球经济具有重要意义，愿与中方一道，继续通过美中经贸磋商机制协商解决经贸领域分歧，推动取得更多磋商成果，进一步稳定美中经贸关系。 中美经贸会谈在瑞典斯德哥尔摩举行https://h.xinhuaxmt.com/vh512/share/12666165?docid=12666165\u0026newstype=1001\u0026d=135006a"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNjAwMjYwNyCIq6XEBjAAONUCQANyEzE5MzM3ODcxODQ2NTk0MDM5MTd4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "391 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/50/v2-5b0c8a40226776e775d05e854a42e372_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "4_1753851040.181689",
+            "card_id": "Q_1932866068239606102",
+            "target": {
+                "id": 1932866068239606102,
+                "title": "印度 1 岁男童误将眼镜蛇当玩具撕裂咬死后幸存，这个行为有多危险？哪些警示意义？",
+                "url": "https://api.zhihu.com/questions/1932866068239606102",
+                "type": "question",
+                "created": 1753611181,
+                "answer_count": 115,
+                "follower_count": 256,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    458,
+                    1571,
+                    9090,
+                    22767,
+                    89475
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "近日，印度比哈尔邦贝蒂亚县发生了一起令人震惊的事件：一名一岁男孩在家玩耍时误将一条眼镜蛇当作玩具撕咬，蛇当场死亡，而男孩却幸免于难。 据其奶奶介绍，事发当地时间7月25日下午，当时这名名叫戈文达的幼儿正在家中玩耍。一条0.6米长的眼镜蛇闯入了他的家中，当时孩子误把它当作玩具捡了起来。然后他咬了眼镜蛇，把这条蛇撕成两半，蛇当场死亡。咬了蛇以后，男孩也昏迷不醒，被紧急送往医院。据医疗队介绍，这条眼镜蛇似乎是因被孩子咬伤头部和口腔而死亡。而毒液对戈文达的影响相对较轻，足以让他昏迷，但不足以致命。“及时的治疗挽救了戈文达的生命，”医生表示，“孩子目前情况稳定，没有出现严重的毒液感染的迹象，但仍在观察之中。”印度一岁男孩误将眼镜蛇当作玩具撕咬，蛇当场死亡"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk2OTYxNCCt95fEBjAAOIACQARyEzE5MzI4NjYwNjgyMzk2MDYxMDJ4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "385 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/80/v2-279bb3a880eb56f39e22e377ace700f3_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "5_1753851040.182997",
+            "card_id": "Q_1933591117917545402",
+            "card_label": {
+                "type": "hot",
+                "icon": "https://pic2.zhimg.com/80/v2-266e83dbee46dce23b718e0531cb7d3a_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-c89199839c237b87e52f010bb5e7d773_1440w.png"
+            },
+            "target": {
+                "id": 1933591117917545402,
+                "title": "看到《南京照相馆》结尾阿昌说出「我们不是朋友，绝对不是」的时候，你的感受是什么？",
+                "url": "https://api.zhihu.com/questions/1933591117917545402",
+                "type": "question",
+                "created": 1753784046,
+                "answer_count": 192,
+                "follower_count": 300,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    68,
+                    5789,
+                    3359528,
+                    3855034,
+                    4010355
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk5Njk5OCDuvaLEBjAAOKwCQAVyEzE5MzM1OTExMTc5MTc1NDU0MDJ4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "334 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-96640a573a1e6a6f3b987063691ad597_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "6_1753851040.183703",
+            "card_id": "Q_1906806190563910673",
+            "target": {
+                "id": 1906806190563910673,
+                "title": "网上人均「原生家庭创伤」，但父母那代更苦却没抑郁，这种矛盾现象你怎么看？",
+                "url": "https://api.zhihu.com/questions/1906806190563910673",
+                "type": "question",
+                "created": 1747398022,
+                "answer_count": 457,
+                "follower_count": 948,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    404,
+                    3481,
+                    10115,
+                    13740,
+                    116406
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "不抑郁是因为坚强，还是没机会了解心理学理念"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNDk3MDExNyCG25zBBjAAOLQHQAZyEzE5MDY4MDYxOTA1NjM5MTA2NzN4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "334 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-01775de561808e7bd09cd4d9b65a5853_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "7_1753851040.187105",
+            "card_id": "Q_19656357",
+            "target": {
+                "id": 19656357,
+                "title": "李阳疯狂英语为什么没落了？",
+                "url": "https://api.zhihu.com/questions/19656357",
+                "type": "question",
+                "created": 1305791440,
+                "answer_count": 389,
+                "follower_count": 1985,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    1100,
+                    2748,
+                    6493,
+                    9154
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "新东方、老罗等崛起，是因为整个培训体制和教学质量确实先进有效。还是只是一波创业者鼓吹，更迭的延续？"
+            },
+            "attached_info": "CjsIu+OSmriGyp94EAMaBTQyNDc4INCX0+4EMAA4wQ9AB3IIMTk2NTYzNTd4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "266 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/80/v2-ded8d755a9a52e0a372fd9b1b8bbedeb_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "8_1753851040.189911",
+            "card_id": "Q_1933096540207014478",
+            "card_label": {
+                "type": "hot",
+                "icon": "https://pic2.zhimg.com/80/v2-266e83dbee46dce23b718e0531cb7d3a_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-c89199839c237b87e52f010bb5e7d773_1440w.png"
+            },
+            "target": {
+                "id": 1933096540207014478,
+                "title": "上海市民称扔个东西要花几百元，扔旧的比买新的还难，为什么会这样？有哪些好的解决办法？",
+                "url": "https://api.zhihu.com/questions/1933096540207014478",
+                "type": "question",
+                "created": 1753666130,
+                "answer_count": 63,
+                "follower_count": 160,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    200,
+                    215,
+                    31370,
+                    35987,
+                    153992
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "“家里的皮沙发用了五六年，最近想换个新的，可没想到处理旧沙发比买新沙发还麻烦。”家住上海浦东的刘女士向记者诉苦，“回收公司不收这一款，联系物业说清运要收200元，想想还是算了。” 这个“算了”背后，有不少无奈。 记者调查发现， 不少市民在更新家具家电时， 遭遇过“扔比买还难”的尴尬， 因此推迟换新的情况并不少见。 “目前，二手家具家电的处理渠道不通畅，只能作为建筑垃圾付费清运，且价格还不菲。”市人大代表陆益认为，二手家具家电清运难、收费乱的问题，不仅影响居民生活品质，也抑制了消费意愿，建议规范清运价格，同时搭建旧家具家电处理平台，激活装修、家电等消费市场。 遭遇“扔比买还难”的尴尬 换套新家具有这么难吗？市民林女士遇到这样的糟心事。家里装修近10年，最近她想换掉一批家具，其中有个八成新的大橱柜，扔了太可惜，她在二手平台挂了一个月，要么买家压价过低，要么因跨城搬运不便而交易失败。她接着联系回收公司，对方看了图片后，直接拒收：“这种款式卖不掉，我们不收。”无奈之下，她付费250元请物业清运。 家住5楼的陈伯伯最近想换台新洗衣机，原本看中了一款参与“以旧换新”政策的品牌，满心期待能享受补贴优惠。然而，咨询客服后被告知，他家的旧洗衣机“不符合回收标准”，无法参与官方回收活动。更让他头疼的是，即便想自行处理旧机，物业告知需支付一笔清运费。“这台老洗衣机又大又重，从5楼搬下去太费劲了，找保安帮忙还得额外收费。”陈伯伯无奈地说。权衡再三，他最终决定放弃换新，“太折腾了，不如再凑合用几年”。 大废旧沙发的回收 记者发现，废旧家具、家电在住宅小区属于“大件垃圾”，居民不能随便乱扔，基本都需收费，但收费标准并不统一。有的居民为省这笔清运费，将旧家具偷偷丢弃在小区角落。记者在苏州河边一居民区看到，一块废弃的海绵床垫被随意扔在小区门口的绿化带里，既影响环境，又存在火灾隐患。“海绵易燃，万一被点燃怎么办？”路过的一位居民忧心忡忡。 陆益发现，在老旧住宅二次装修过程中，大量尚有使用价值的家具家电因缺乏规范的回收渠道，最终不得不被当作大件垃圾、建筑垃圾处理，且居民还需承担高昂的清运费用，这已成为制约居民改善性消费的一大瓶颈。 痛点在于信息不对称 大件垃圾清运的痛点，主要在于标准缺失和渠道不畅。 一则收费混乱，让居民“心里没底”。记者发现，目前，商品房小区对废旧家具家电普遍按件收费，比如沙发200元/件、冰箱100元/台，清运收费价格并不统一，从50元到500元不等，部分老旧小区则是“免费”。桑小姐抱怨道：“同样一部废冰箱，我妈住的小区收50元，我这里要收150元。” 各小区对大件垃圾的收运方式也存在明显差异。部分小区要求业主自行将物品搬运至指定堆放点，如需上门服务则额外收费；另一些小区则由物业直接对接第三方清运公司。这种服务标准的不统一，加剧了居民的困惑和不满。 记者调查发现，大件垃圾和建筑垃圾一样，当小区集中堆放点堆满之后，物业通常需联系第三方清运公司派出车辆来清运，一般按车吨位收费，比如3吨车500元、5吨车700元。 这个过程让居民产生两点疑问：一是谁来监管清运车辆是否装满，二是，费用分摊不透明，居民无法知晓自家垃圾在整车中的占比。有的小区物业会根据业主实际使用的车辆数量多退少补，有的小区则把这部分算在“短驳费”中，这通常都是模糊定价。所以居民对这种计费方式并不买账。而物业也觉得“冤枉”。一小区物业经理坦言：“清运成本包含短驳费、人工费和处置费，但业主总觉得我们‘中间赚差价’。” 更深层次的问题在于制度设计。部分清运单位与物业缺乏正式委托协议，物业因清运会产生一些额外人工成本，因无法保障自身权益拒绝清运车辆进入小区。当居民投诉时，双方就互相推诿。 “问题的关键在于信息不对称。”市人大代表邹彩玲认为，如果能让清运单位和居民直接沟通，就少了中间信息差的误解。她建议，建立清运单位与居民的直联机制，公开清运联系方式；同时规范清运单位与物业的《委托协议》，做好权利和义务的规定，明确“谁收费谁负责”原则。"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk3NTgyMSDSpJvEBjAAOKABQAhyEzE5MzMwOTY1NDAyMDcwMTQ0Nzh4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "166 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic3.zhimg.com/v2-7ea94250a3b440b8c509d6e92114ead6_1440w.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "9_1753851040.192962",
+            "card_id": "Q_1933168158581171762",
+            "target": {
+                "id": 1933168158581171762,
+                "title": "7 月 27 日世锦赛男子 200 米自由泳，潘展乐总成绩第 22 无缘半决赛 ，他此役表现如何？",
+                "url": "https://api.zhihu.com/questions/1933168158581171762",
+                "type": "question",
+                "created": 1753683205,
+                "answer_count": 25,
+                "follower_count": 79,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    1538,
+                    2742,
+                    27630,
+                    355650,
+                    3631284
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "游泳世锦赛结束男子200米自由泳预赛争夺，中国选手张展硕晋级半决赛，潘展乐无缘半决赛。潘展乐游出了1分47秒46，这一成绩排名小组第7、总成绩第22无缘晋级半决赛。张展硕游出了1分46秒17，这一成绩排名小组第3、总成绩第9晋级半决赛。世锦赛男子200米自由泳：潘展乐总成绩第22无缘半决赛 张展硕晋级"
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk3OTUxNiCFqpzEBjAAOE9ACXITMTkzMzE2ODE1ODU4MTE3MTc2MngAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "156 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/80/v2-908fb68b3787d21c57842045e52a8d9a_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "10_1753851040.193748",
+            "card_id": "Q_1933215453452436686",
+            "target": {
+                "id": 1933215453452436686,
+                "title": "《年轮》版权被收回对汪苏泷及行业会有什么影响或启示？",
+                "url": "https://api.zhihu.com/questions/1933215453452436686",
+                "type": "question",
+                "created": 1753694481,
+                "answer_count": 115,
+                "follower_count": 166,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    161843
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "以后还有人敢与汪苏泷合作吗？或者以后就不存在什么君子之约了，都要在合同里说的清清楚楚，不然歌火了就会出现创作者出来争抢的情况。"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk4MjQ1NCCRgp3EBjAAOKYBQApyEzE5MzMyMTU0NTM0NTI0MzY2ODZ4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "146 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/50/v2-dfa8fad3a4e2604078af348bb67dc838_720w.jpg?source=1940ef5c"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "11_1753851040.194291",
+            "card_id": "Q_1933465176734164485",
+            "target": {
+                "id": 1933465176734164485,
+                "title": "网红「旺仔小乔」被禁言禁关，公开道歉信被指查重率达 97%，后续事态会怎样发展？",
+                "url": "https://api.zhihu.com/questions/1933465176734164485",
+                "type": "question",
+                "created": 1753754020,
+                "answer_count": 164,
+                "follower_count": 426,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    215,
+                    5942,
+                    6589,
+                    166889,
+                    2288128
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "7月29日一早，千万粉丝网红「旺仔小乔」被禁言相关词条冲上热搜第一。 「旺仔小乔」的个人微博主页显示「因违反相关法律法规，该用户目前处于禁言状态」。其抖音平台账号、小红书账号也显示为禁止关注状态。 此前报道： 近日，因为蒙面演唱会引发巨大争议的网红歌手旺仔小乔发布道歉信后，又因查重率被质疑高达97%，再次被推上风口浪尖。 7月26日晚，旺仔小乔发道歉信：关于由我引发的争议，我接受大家所有的批评与指正。 她提到：近期，关于我计划在上海举办蒙面演唱会引发的广泛讨论和争议，我一直在密切关注并深刻反思。大家的每一条声音，无论是批评、质疑还是关心、激励，我都认真看了，也记在了心里，我真诚地接受所有批评与指正。 在此，我郑重地向所有因此事感到受伤、失望或困扰的粉丝、朋友们，以及所有受到波及的合作方、音乐界人士致以最诚恳的歉意！对不起！我不会为自己的错误寻找任何借口。我深刻理解，作为拥有一定影响力的歌手、公众人物，我的言行举止应当更加审慎，应当时刻传递积极正向的能量，为乐迷带去快乐、感动，而不是让他们感到失望甚至愤怒，这次事件给我敲响了深刻的警钟。 随后，网友通过检测工具发现道歉信查重率高达97.18%，并调侃「难道就原创了一个自己的名字？」 截至7月29日0点46分左右，旺仔小乔抖音号粉丝数已跌至1912.9万，跟其此前2344.8万粉丝量相比，已掉粉超430万。 网红“旺仔小乔”微博被禁言，抖音已掉粉超430万；其蒙面演唱会已延期，公开道歉信被指查重率达97%"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk5MDE0OCCk06DEBjAAOKoDQAtyEzE5MzM0NjUxNzY3MzQxNjQ0ODV4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "105 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-c2ea65204d9c734379bf91d951aba031_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "12_1753851040.195746",
+            "card_id": "Q_1933467564635321536",
+            "target": {
+                "id": 1933467564635321536,
+                "title": "券商预计生育国补利好地产、汽车等板块，为何3600元通过母婴就能产生如此巨大的经济杠杆系数？",
+                "url": "https://api.zhihu.com/questions/1933467564635321536",
+                "type": "question",
+                "created": 1753754589,
+                "answer_count": 62,
+                "follower_count": 111,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    1708,
+                    3324,
+                    19800,
+                    154716,
+                    2459579
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "【浙商证券：生育补贴政策实施落地 母婴消费产业链或更多获益 汽车、餐饮等领域或也迎来估值重构】浙商证券发布研究报告称，国家育儿补贴制度实施方案于2025年7月28日公布，面向育儿家庭全国范围全面直接发放现金补贴，有助于缓解家庭养育压力。随着生育补贴政策实施落地，有望改善市场预期，母婴消费产业链或更多获益，汽车、餐饮等领域也可能迎来估值重构。自放开三孩以来，各地积极健全生育配套政策，包括提供生育补贴、完善生育保险、个税减免、产假育儿假、提供托育服务、住房优先保障等，该机构理解政策重心是降低生育养育教育的直接成本、机会成本、时间成本。 华泰证券报告指出，多孩家庭的改善型住房需求将直接利好家电、家居等行业，并测算若政策在全国推广，可带动地产库存去化率提升 2.3-4.1 个百分点。该研究虽未直接使用 “双赢探索” 标题，但通过 “人口政策 - 住房需求 - 产业链传导” 的分析框架，系统性论证了生育补贴对地产去库存的促进作用。 中信证券报告测算，若呼和浩特政策在全国复制，2025-2027 年将产生 901/1363/1825 亿元财政支出，对应拉动母婴产业 1.2/1.8/2.4 万亿元市场规模，同时带动改善型住房需求增长 15%。该研究首次将生育补贴与地产去库存纳入统一分析框架，提出 “户籍绑定 + 购房奖励” 的创新模式。 申万宏源报告称以湖北天门为例，测算生育补贴对地产去库存的实际效果。天门市 2024 年通过 “3.6 万元育儿补贴 + 12 万元购房奖励” 政策，推动商品房销售面积同比增长 6.1%，其中三孩家庭购房占比达 38%。研究指出，地方财政压力可控（补贴支出占一般公共预算收入 \u003c 2%），且补贴资金可通过地产交易税收回流，形成 “财政支出 - 库存去化 - 税收增长” 的闭环。房地产行业周报：育儿补贴落地利好改善型需求释放 居民中长贷等待回升育儿补贴方案出炉！华泰证券：2025-2027年化补贴金额约1200亿元，对防止生育率进一步下降、提振总消费有着积极意义-手机金融界中金2025年度展望：港股“反弹是间歇，结构是主线”中信证券：呼市发布生育补贴细则"
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk5MDI3NiDd16DEBjAAOG9ADHITMTkzMzQ2NzU2NDYzNTMyMTUzNngAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "97 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-4735dea44d7545c6ba2872ce652089b9_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "13_1753851040.197397",
+            "card_id": "Q_1933602585018867767",
+            "card_label": {
+                "type": "hot",
+                "icon": "https://pic2.zhimg.com/80/v2-266e83dbee46dce23b718e0531cb7d3a_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-c89199839c237b87e52f010bb5e7d773_1440w.png"
+            },
+            "target": {
+                "id": 1933602585018867767,
+                "title": "如何评价电视剧《凡人修仙传》7-8 集？",
+                "url": "https://api.zhihu.com/questions/1933602585018867767",
+                "type": "question",
+                "created": 1753786780,
+                "answer_count": 16,
+                "follower_count": 23,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    2102,
+                    171619,
+                    2241813,
+                    3855034,
+                    4010355
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk5NzQ3MiCc06LEBjAAOBdADXITMTkzMzYwMjU4NTAxODg2Nzc2N3gAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "92 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/50/v2-bb69d0c12e2e2c93a451d06cd18b2cc1_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "14_1753851040.198033",
+            "card_id": "Q_1933572177162135442",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1933572177162135442,
+                "title": "如何评价《绝区零》活动『嗯呢』棋闻录？",
+                "url": "https://api.zhihu.com/questions/1933572177162135442",
+                "type": "question",
+                "created": 1753779531,
+                "answer_count": 21,
+                "follower_count": 17,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    3587022,
+                    3978159
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk5NTkyNiDLmqLEBjAAOBFADnITMTkzMzU3MjE3NzE2MjEzNTQ0MngAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "85 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": ""
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "15_1753851040.198542",
+            "card_id": "Q_1933452680874954834",
+            "target": {
+                "id": 1933452680874954834,
+                "title": "媒体称NASA发现一颗富含黄金的小行星，估值 5.53 亿亿元，这意味着什么？这些黄金能被人类所用吗？",
+                "url": "https://api.zhihu.com/questions/1933452680874954834",
+                "type": "question",
+                "created": 1753751040,
+                "answer_count": 180,
+                "follower_count": 482,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    1346,
+                    4151,
+                    24600,
+                    49110
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "据悉，美国国家航空航天局(NASA)在位于小行星带的16号灵神星(16 Psyche上，发现了一个巨大的“黄金矿藏”。据《The Plus》报道，这颗金属丰富的小行星所含的金属（包括黄金、铁和镍）估值高达700万亿欧元（约合5.53亿亿元人民币）。如果将这些财富平均分配给全球约80亿人口，每人理论上可获得约875亿欧元（约合6,912亿元人民币）。 不过，专家警告称，这可能对全球经济造成灾难性冲击，反而可能进一步加剧贫富差距，并引发通货膨胀和物价飙升。NASA已于2023年10月发射“灵神号”航天器,正式启动对这颗金属型小行星的探测任务。该航天器预计将在2029年抵达目标。 NASA发现“黄金星球”，矿藏估值5.53亿亿元，若均分全球每人可得6912亿元_Psyche_小行星_约合"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk4OTQ2NCCAvKDEBjAAOOIDQA9yEzE5MzM0NTI2ODA4NzQ5NTQ4MzR4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "82 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-a78bf142af583c8f0a8ba9dccf16a2d6_1440w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "16_1753851040.199522",
+            "card_id": "Q_1933227451481323222",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1933227451481323222,
+                "title": "美国情报系统现在属于什么水平？",
+                "url": "https://api.zhihu.com/questions/1933227451481323222",
+                "type": "question",
+                "created": 1753697342,
+                "answer_count": 22,
+                "follower_count": 21,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    472,
+                    4621,
+                    31274,
+                    85016,
+                    110794
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk4MzE3MyC+mJ3EBjAAOBVAEHITMTkzMzIyNzQ1MTQ4MTMyMzIyMngAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "78 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": ""
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "17_1753851040.199891",
+            "card_id": "Q_1922269410556638378",
+            "target": {
+                "id": 1922269410556638378,
+                "title": "为什么早期TVB里面的高知女性很有魅力？",
+                "url": "https://api.zhihu.com/questions/1922269410556638378",
+                "type": "question",
+                "created": 1751084741,
+                "answer_count": 28,
+                "follower_count": 153,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    10679,
+                    210524,
+                    363203,
+                    1410098,
+                    2178310
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "早期TVB里面的女性很有魅力，比如 1、《飞上云霄》里面的女性机长，空姐和女性地勤人员 2、《壹号皇庭V》里面的陈慧珊 以前小时候看港剧，真的以为长大之后我们从事的这些职业就应该是这样的，医生，律师，警察"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTU5MjczNSDF3f3CBjAAOJkBQBFyEzE5MjIyNjk0MTA1NTY2MzgzNzh4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "73 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/80/v2-f04fc3c913533fb94f3056f84ddefd5d_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "18_1753851040.200691",
+            "card_id": "Q_1931393596059255102",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1931393596059255102,
+                "title": "为什么骑兵坐骑两侧不固定两根长矛，这样的话，冲锋不更猛吗？",
+                "url": "https://api.zhihu.com/questions/1931393596059255102",
+                "type": "question",
+                "created": 1753260116,
+                "answer_count": 17,
+                "follower_count": 16,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    27543,
+                    44802,
+                    168396,
+                    3022590,
+                    3507384
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTkxNjYxNiDUwILEBjAAOBBAEnITMTkzMTM5MzU5NjA1OTI1NTEwMngAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "70 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/50/v2-f7640e73408763748a7d936ecb378263_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "19_1753851040.201122",
+            "card_id": "Q_28691943",
+            "target": {
+                "id": 28691943,
+                "title": "为什么越想得到越得不到？",
+                "url": "https://api.zhihu.com/questions/28691943",
+                "type": "question",
+                "created": 1426087537,
+                "answer_count": 50,
+                "follower_count": 188,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    119,
+                    404,
+                    2019,
+                    6659,
+                    24852
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "越想得到一样东西 就会为了它拼命 比如学习 努力奋斗了很久 最后反倒连正常的水平都没有 越想得到什么 付出越多 一分耕耘一分收获 理应得到更多啊 结果却反之了 但 为什么呢 很不公平是吗"
+            },
+            "attached_info": "Cj0Iu+OSmriGyp94EAMaBzM2NTk3NjUg8byBqAUwADi8AUATcggyODY5MTk0M3gAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "69 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/v2-bf7e2e5c7cffe196d4b9bf33d898cdeb_r.jpg?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "20_1753851040.201750",
+            "card_id": "Q_1932862548698440718",
+            "target": {
+                "id": 1932862548698440718,
+                "title": "如何看待武汉大学医学生机舱救人被网友质疑？没有执业医师资格证救人会有法律风险吗？",
+                "url": "https://api.zhihu.com/questions/1932862548698440718",
+                "type": "question",
+                "created": 1753610342,
+                "answer_count": 175,
+                "follower_count": 244,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    237,
+                    3878,
+                    46857,
+                    156999
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "近日，武汉大学发文表扬了一名校内医学生处理了一起航班上突发的急救事件。今年7月19日，一架从武汉飞往新疆的航班，机上一名乘客突发身体不适，2024级临床医学专业本科生孙毅杰和机组人员分工合作，患者转危为安。对于孙毅杰的义举，这篇文章给予了很高的评价，“孙毅杰用行动证明医者的仁心”。#医学生机舱救人武大发文表扬引争议# 文章发布后，大量网友也为孙毅杰点赞，不过也有网友有不同意见，有网友认为，见义勇为是好的，但对于临床知识匮乏，没有执业资格的学生，在飞机上这种抢救手段有限的环境中，患者和施救者都存在很高的风险，武汉大学宣传此事却没有提及背后的风险，欠妥。 7月27日，当事同学孙毅杰告诉@潇湘晨报 记者，那天他在回家的飞机上，听到广播寻医，没有犹豫就过去了。女生精神不太好，说自己头晕手脚发麻，说几个月前在飞机也发作过，情况比较严重飞机还为此备降了。孙毅杰当时手里没有设备，初步给她做了体格检查，脉搏比较细弱，神志也比较涣散，他判断是比较危险的信号。 机组人员在一旁喂女生喝了糖水，喝完后孙毅杰让她躺下，机组人员随后把氧气瓶和急救箱拿来， 孙毅杰给女生吸氧，用急救箱里的仪器测量了她的生命体征，还好比较平稳。女生躺了一会儿，慢慢好转了，坐起来以后动态复查了生命体征，女生没啥大碍了。 武汉大学发文表扬他后，赢得网友赞誉的同时，也给孙毅杰带来了一些困扰。有网友质疑他才大二，有网友问他有没有行医证，还有网友讨论万一被讹上了怎么办。为此他也在社交平台发文，回应了一些网友的问题。 即使如此，孙毅杰说，他不后悔，也没有后怕。他认为，在飞机上最严重的就是呼吸心跳停止，这种情况就地和机组人员一起进行心肺复苏就可以，如果遇到了他处理不了的情况，如果不危及生命也不需要在飞机上完善诊断和治疗，在飞机上需要做的就是稳定生命体征，只要掌握操作原则和动态观察就可以。 但是，孙毅杰也建议，和他一样有理想还在学习的医学生们，遇到这种情况，量力而行，尽力而为。出手前要想一想，有没有这个能力，能不能承担后果。孙毅杰说，他所在的学院有临床导师制度，刚入学没多久他就跟了一个临床医学的导师，今年1月一个寒假都待在医院急诊科，开学后也是每周去一次。 他在急诊科见过很多病人，对于危重状况下的抢救比较了解，也会判断病人的生命体征是否在正常范围内，“因为我了解这些知识，所以我有勇气和胆量站出来去做这件事，但是没有这个能力的同学，遇到这种情况还是不要轻易出手，这样会把自己和被帮助者都置于危险的境地。”医学生飞机上救人被质疑没有行医资格：我知道边界，量力而行"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk2OTQ2OCDm8JfEBjAAOPQBQBRyEzE5MzI4NjI1NDg2OTg0NDA3MTh4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "68 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-fcc547e68659a02a7a065bbd0c931e22_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "21_1753851040.203871",
+            "card_id": "Q_1933133311875720538",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1933133311875720538,
+                "title": "五十岁的李昌镐，是否强过二十多岁巅峰时期？",
+                "url": "https://api.zhihu.com/questions/1933133311875720538",
+                "type": "question",
+                "created": 1753674897,
+                "answer_count": 15,
+                "follower_count": 23,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    1752,
+                    166651,
+                    3776147
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "探讨一下，现在李昌镐经历了ai围棋时代，各种更新换代，那么他现在直接和二十多岁时期的自己对弈，谁能赢？"
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk3Nzk0NCCR6ZvEBjAAOBdAFXITMTkzMzEzMzMxMTg3NTcyMDUzOHgAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "66 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/50/v2-1e16d1253b507f18a2a5416e0f102dd2_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "22_1753851040.204618",
+            "card_id": "Q_1918967602643998031",
+            "target": {
+                "id": 1918967602643998031,
+                "title": "认知的提高需要多读书、还是多见人、还是多遇事？",
+                "url": "https://api.zhihu.com/questions/1918967602643998031",
+                "type": "question",
+                "created": 1750297529,
+                "answer_count": 115,
+                "follower_count": 186,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    120286,
+                    2318989,
+                    2773998
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "怎样提高认知"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTQ1MzI5MSC5183CBjAAOLoBQBZyEzE5MTg5Njc2MDI2NDM5OTgwMzF4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "65 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-7ea7f5eab6704dec6cb221f1d5abcfc6_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "23_1753851040.205158",
+            "card_id": "Q_387480003",
+            "target": {
+                "id": 387480003,
+                "title": "主角的超能力设定为控制水，技能招式如何玩出花样?",
+                "url": "https://api.zhihu.com/questions/387480003",
+                "type": "question",
+                "created": 1586772081,
+                "answer_count": 1742,
+                "follower_count": 4300,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    5456,
+                    15283,
+                    25004,
+                    48860
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "举个例子：雷元素可以高速移动，电光闪瞎视觉，雷鸣震聋听觉，防御有电磁屏障，电流强化肉体机能，电生磁/磁生电控制金属。 但控制水以及液体很难造成什么有效的杀伤力而且也难玩出什么花样，如何设计这个超能力呢？"
+            },
+            "attached_info": "Cj8Iu+OSmriGyp94EAMaCDQ4Mzg0MjMyIPHw0PQFMAA4zCFAF3IJMzg3NDgwMDAzeACqAQliaWxsYm9hcmTSAQA=",
+            "detail_text": "65 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/v2-556e72261201c0b9c95af0e24706b5d5_xl.jpg?source=57bbeac9"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "24_1753851040.205997",
+            "card_id": "Q_1912623305988510231",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1912623305988510231,
+                "title": "40岁了，很想去读博士，你觉得还有必要吗？",
+                "url": "https://api.zhihu.com/questions/1912623305988510231",
+                "type": "question",
+                "created": 1748784930,
+                "answer_count": 377,
+                "follower_count": 425,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    19768,
+                    125054
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "主要是喜欢搞研究，做学术。"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTE5ODM0NSCirvHBBjAAOKkDQBhyEzE5MTI2MjMzMDU5ODg1MTAyMzF4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "64 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/80/v2-7f3b8a0b379b75172bbccb950319aff0_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "25_1753851040.206536",
+            "card_id": "Q_1933630708687005686",
+            "target": {
+                "id": 1933630708687005686,
+                "title": "法院认为不能认定武汉大学图书馆男生实施性骚扰，学校应不应该撤销处分？撤销处分难点在哪？",
+                "url": "https://api.zhihu.com/questions/1933630708687005686",
+                "type": "question",
+                "created": 1753793486,
+                "answer_count": 356,
+                "follower_count": 784,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    215,
+                    3878,
+                    10331,
+                    2057456
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "7月25日，“武汉大学图书馆男生涉嫌性骚扰”事件有了最新进展，先后经两次不公开审理后，法院一审宣判：不符合性骚扰的构成要件。 2023年10月，一篇发表于微信公众号上的“举报”网文引发舆论关注。该网文以武大女生第一人称口吻，称自己于当年7月11日在学校图书馆自习时遭同校一男生“性骚扰”。 文中称，在图书馆自习时，肖某某坐在女方对面持续隔着裤子摩擦下体，肖某某明知图书馆为公共场所，明知自己的行为“下流”，该行为应当被认定为性骚扰。 2023年10月17日，肖某某收到校方的处分决定文件。处分决定称：肖某某在图书馆北门走廊“存在不雅行为，有损大学生形象，造成不良影响”，根据《武汉大学学生纪律处分办法（修订）》第22条第5款规定，决定给予记过处分。通报并未披露事件详细经过或事实认定。 对此，肖某某的母亲表示，孩子从小患有特应性皮炎，当时赶上天热腿上湿疹复发，就是隔着衣服瘙痒。 2024年6月24日，女方将肖某某起诉至武汉经开区人民法院，其主张肖某某的行为严重侮辱了女方的人格尊严，对女方的精神健康造成了侵害。 庭审中，肖某家人提供了事发当天委托他人购买皮疹药物的微信聊天记录，以及购药发票和付款证明。并有证人出庭作证。 肖某某母亲出具的就诊记录显示，被公开指性骚扰后，2023年10月17日，肖某某在武汉市精神卫生中心确诊为“急性应激反应”，并被要求入院治疗。 肖母称，事发后，因无法正常到校学习，肖某某多门功课延考，原计划的保研和留学计划都受到了影响。“我现在只求孩子平安，能得到一个公平公正的对待。”武汉大学图书馆涉嫌性骚扰事件一审宣判：不符合性骚扰构成要件"
+            },
+            "attached_info": "CkoIu+OSmriGyp94EAMaCTExNTk5ODc1NiDOh6PEBjAAOJAGQBlyEzE5MzM2MzA3MDg2ODcwMDU2ODZ4AKoBCWJpbGxib2FyZNIBAA==",
+            "detail_text": "64 万热度",
+            "trend": 0,
+            "debut": false,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/50/v2-8ddb2163f9a5eb6f0af1f01452ca1d90_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "26_1753851040.208144",
+            "card_id": "Q_651485684",
+            "target": {
+                "id": 651485684,
+                "title": "老妈有哪些惊艳到你的收纳智慧？",
+                "url": "https://api.zhihu.com/questions/651485684",
+                "type": "question",
+                "created": 1712128425,
+                "answer_count": 19,
+                "follower_count": 287,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    3254,
+                    23269,
+                    69194,
+                    3420385,
+                    3442172
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkAIu+OSmriGyp94EAMaCTEwNzA1MjM5MyCpg7SwBjAAOJ8CQBpyCTY1MTQ4NTY4NHgAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "64 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://picx.zhimg.com/50/v2-8ff8ae36666ee6bbaa570e10b67031cd_b.jpg"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "27_1753851040.208730",
+            "card_id": "Q_1929416996317008469",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1929416996317008469,
+                "title": "孙悟空最后成为斗战胜佛，他能不能打得过观音菩萨？",
+                "url": "https://api.zhihu.com/questions/1929416996317008469",
+                "type": "question",
+                "created": 1752788858,
+                "answer_count": 35,
+                "follower_count": 46,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    2058,
+                    2279,
+                    7675,
+                    10867,
+                    156312
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "孙悟空最后成为斗战胜佛，他能不能打的过观音菩萨？"
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTg0NzMzMSD63uXDBjAAOC5AG3ITMTkyOTQxNjk5NjMxNzAwODQ2OXgAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "62 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": ""
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "28_1753851040.209225",
+            "card_id": "Q_1923369286916862494",
+            "target": {
+                "id": 1923369286916862494,
+                "title": "当写作卡壳，海明威酗酒、村上春树跑步，作家如何面对写不下去的时刻？",
+                "url": "https://api.zhihu.com/questions/1923369286916862494",
+                "type": "question",
+                "created": 1751346972,
+                "answer_count": 31,
+                "follower_count": 65,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    767,
+                    1508,
+                    21767,
+                    97283,
+                    2777200
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": ""
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTYzNTM1NiCc3o3DBjAAOEFAHHITMTkyMzM2OTI4NjkxNjg2MjQ5NHgAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "62 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pica.zhimg.com/80/v2-a2eba6b8b5c17928ef6ba7e2b4223c82_720w.webp?source=1def8aca"
+                }
+            ]
+        },
+        {
+            "type": "hot_list_feed",
+            "style_type": "1",
+            "id": "29_1753851040.210126",
+            "card_id": "Q_1932083473998378878",
+            "card_label": {
+                "type": "new",
+                "icon": "https://pic2.zhimg.com/80/v2-a4b0b52b561281109c51e4957cb20130_1440w.png",
+                "night_icon": "https://pic3.zhimg.com/80/v2-10ef6526c602e55a8c606e46aa0cc586_1440w.png"
+            },
+            "target": {
+                "id": 1932083473998378878,
+                "title": "一线城市家长追捧「凯迪克奖绘本」，三四线沉迷9.9元盗版书，儿童阅读是否存在阶层分化？",
+                "url": "https://api.zhihu.com/questions/1932083473998378878",
+                "type": "question",
+                "created": 1753424596,
+                "answer_count": 27,
+                "follower_count": 38,
+                "author": {
+                    "type": "people",
+                    "user_type": "people",
+                    "id": "0",
+                    "url_token": "",
+                    "url": "",
+                    "name": "用户",
+                    "headline": "",
+                    "avatar_url": "https://pica.zhimg.com/aadd7b895_s.jpg"
+                },
+                "bound_topic_ids": [
+                    113,
+                    36883,
+                    85195,
+                    138466,
+                    183112
+                ],
+                "comment_count": 0,
+                "is_following": false,
+                "excerpt": "儿童图书乱象调查：一本童书动辄百元 豪华包装有必要吗；直播间里的“清仓”童书盗版横行质量很差-新华网"
+            },
+            "attached_info": "CkkIu+OSmriGyp94EAMaCTExNTk0MjczOCDUxYzEBjAAOCZAHXITMTkzMjA4MzQ3Mzk5ODM3ODg3OHgAqgEJYmlsbGJvYXJk0gEA",
+            "detail_text": "61 万热度",
+            "trend": 0,
+            "debut": true,
+            "children": [
+                {
+                    "type": "answer",
+                    "thumbnail": "https://pic1.zhimg.com/80/v2-83e54318092285485a085aa97b2e5116_720w.webp?source=1def8aca"
+                }
+            ]
+        }
+    ],
+    "paging": {
+        "is_end": true,
+        "is_start": false,
+        "next": "",
+        "previous": "",
+        "totals": 0
+    },
+    "fresh_text": "热榜已更新",
+    "display_num": 15,
+    "display_first": false,
+    "fb_bill_main_rise": 0,
+    "head_zone": {
+        "type": "billboard_lantern",
+        "data": [
+            {
+                "id": "1857515993426948096",
+                "link_url": "https://www.zhihu.com/appview/community_construction",
+                "title": "辟谣专区",
+                "source_type": 0,
+                "attached_info": "Ci4QABoTMTg1NzUxNTk5MzQyNjk0ODA5NnITMTg1NzUxNTk5MzQyNjk0ODA5NngA",
+                "tag": "辟谣",
+                "tag_bg_color": "GRD01A"
+            }
+        ]
+    },
+    "head_zones": [
+        {
+            "type": "billboard_lantern",
+            "data": [
+                {
+                    "id": "1857515993426948096",
+                    "link_url": "https://www.zhihu.com/appview/community_construction",
+                    "title": "辟谣专区",
+                    "source_type": 0,
+                    "attached_info": "Ci4QABoTMTg1NzUxNTk5MzQyNjk0ODA5NnITMTg1NzUxNTk5MzQyNjk0ODA5NngA",
+                    "tag": "辟谣",
+                    "tag_bg_color": "GRD01A"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+[
+    {
+        "event": "三大暴雨中心",
+        "kind": "社会民生",
+        "sign": "important"
+    },
+    {
+        "event": "中美新一轮经贸会谈",
+        "kind": "经济",
+        "sign": "urgent"
+    },
+    {
+        "event": "北京暴雨",
+        "kind": "社会民生",
+        "sign": "important"
+    },
+    {
+        "event": "俄罗斯堪察加8.7级地震",
+        "kind": "公共安全",
+        "sign": "urgent"
+    },
+    {
+        "event": "海啸预警",
+        "kind": "公共安全",
+        "sign": "urgent"
+    },
+    {
+        "event": "台风竹节草",
+        "kind": "公共安全",
+        "sign": "important"
+    },
+    {
+        "event": "育儿补贴",
+        "kind": "社会民生",
+        "sign": "important"
+    },
+    {
+        "event": "足坛反腐",
+        "kind": "政治",
+        "sign": "important"
+    },
+    {
+        "event": "释永信信息被撤",
+        "kind": "社会民生",
+        "sign": "important"
+    }
+]

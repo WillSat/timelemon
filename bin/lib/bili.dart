@@ -1,22 +1,12 @@
 import 'package:dio/dio.dart';
 
-const int biliLimit = 30;
+const int biliLimit = 50;
 
-const biliPrompt = '哔哩哔哩热搜榜';
+const biliPrompt = '《哔哩哔哩热搜榜》优先级中';
 
-Future<String> getStringData() async {
-  final res = await getJson();
-  final list = (res?['data']?['trending']?['list'] as List?)?.cast<Map>();
-
-  // 处理数据
-  if (list == null || list.isEmpty) return 'NULL';
-  return '$biliPrompt\n${list.map((e) => e['keyword']).join('\n')}';
-}
-
-Future<Map?> getJson() async {
+Future<String?> getStringData(Dio dio) async {
   try {
-    // 发送 GET 请求
-    final response = await Dio().get(
+    final response = await dio.get(
       'https://api.bilibili.com/x/web-interface/wbi/search/square',
       queryParameters: {
         'limit': biliLimit,
@@ -32,7 +22,13 @@ Future<Map?> getJson() async {
       ),
     );
 
-    return response.data;
+    final list = (response.data?['data']?['trending']?['list'] as List?)
+        ?.cast<Map>();
+
+    // 处理数据
+    if (list == null || list.isEmpty) return null;
+    final content = list.map((e) => e['keyword']).join(', ');
+    return '$biliPrompt\n$content';
   } catch (e) {
     // 错误处理
     if (e is DioException) {
