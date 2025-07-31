@@ -28,6 +28,13 @@ const sysMsg = '''你是一个社会事件分析专家，从热搜条目中选�
 final apiKey = File('in/deepseek-api.key').readAsStringSync();
 
 void main() async {
+  if (!File('in/deepseek-api.key').existsSync() ||
+      !File('in/zhihu-cookie.key').existsSync()) {
+    File('in/deepseek-api.key').createSync(recursive: true);
+    File('in/zhihu-cookie.key').createSync(recursive: true);
+    return;
+  }
+
   await generateWords();
 }
 
@@ -57,7 +64,7 @@ Future<void> generateWords() async {
     return '${DateFormat('yyyyMMdd').format(dt)}-${dt.hour ~/ 6 + 1}';
   }
 
-  saveToJsonFile('${makeFileName()}-RAW.txt', data);
+  // saveToJsonFile('${makeFileName()}-RAW.txt', data);
 
   String resJson = '';
   // AI Summary
