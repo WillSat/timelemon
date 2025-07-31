@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-const baiduPrompt = '《百度热搜榜》优先级中';
+const baiduPrompt = '##《百度热搜榜》优先级中';
 
 Future<String?> getStringData(Dio dio) async {
   try {
@@ -10,7 +10,7 @@ Future<String?> getStringData(Dio dio) async {
 
     // 处理数据
     if (list == null || list.isEmpty) return null;
-    final content = list.map((e) => e['title']).join(', ');
+    final content = list.map((e) => e['title']).join('\n');
     return '$baiduPrompt\n$content';
   } catch (e) {
     // 错误处理

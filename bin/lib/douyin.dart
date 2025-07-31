@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-const douyinPrompt = '《抖音热点榜》优先级中';
+const douyinPrompt = '##《抖音热点榜》优先级高';
 
 Future<String?> getStringData(Dio dio) async {
   try {
@@ -19,7 +19,7 @@ Future<String?> getStringData(Dio dio) async {
     final list = (response.data?['data']?['word_list'] as List?)?.cast<Map>();
 
     if (list == null || list.isEmpty) return null;
-    final content = list.map((e) => e['word']).join(', ');
+    final content = list.map((e) => e['word']).join('\n');
     return '$douyinPrompt\n$content';
   } catch (e) {
     // 错误处理

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-const weiboPrompt = '《微博热搜榜》优先级低';
+const weiboPrompt = '##《微博热搜榜》优先级低';
 
 Future<String?> getStringData(Dio dio) async {
   try {
@@ -19,7 +19,7 @@ Future<String?> getStringData(Dio dio) async {
     final list = (response.data?['data']?['realtime'] as List?)?.cast<Map>();
 
     if (list == null || list.isEmpty) return null;
-    final content = list.map((e) => e['word']).join(', ');
+    final content = list.map((e) => e['word']).join('\n');
     return '$weiboPrompt\n$content';
   } catch (e) {
     // 错误处理

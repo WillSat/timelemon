@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 const int biliLimit = 50;
 
-const biliPrompt = '《哔哩哔哩热搜榜》优先级中';
+const biliPrompt = '##《哔哩哔哩热搜榜》优先级高';
 
 Future<String?> getStringData(Dio dio) async {
   try {
@@ -27,7 +27,7 @@ Future<String?> getStringData(Dio dio) async {
 
     // 处理数据
     if (list == null || list.isEmpty) return null;
-    final content = list.map((e) => e['keyword']).join(', ');
+    final content = list.map((e) => e['keyword']).join('\n');
     return '$biliPrompt\n$content';
   } catch (e) {
     // 错误处理

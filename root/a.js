@@ -1,10 +1,23 @@
 const timeline = document.getElementById('timeline');
 const tooltip = document.getElementById('tooltip');
+const blurbox = document.getElementById('blurbox');
+let ifMoveWhileClick = false;
+blurbox.addEventListener('pointerdown', () => {
+    const up = () => {
+        blurbox.removeEventListener('pointermove', move);
+        blurbox.removeEventListener('pointerup', up);
+        blurbox.style.display = 'none';
+    }
 
-// 设置当前日期
-const now = new Date();
-document.getElementById('currentDate').textContent =
-    `${now.getFullYear()} 年 ${now.getMonth() + 1} 月 ${now.getDate()} 日`;
+    const move = () => {
+        blurbox.removeEventListener('pointermove', move);
+        blurbox.removeEventListener('pointerup', up);
+        ifMoveWhileClick = true;
+    }
+
+    blurbox.addEventListener('pointerup', up);
+    blurbox.addEventListener('pointermove', move);
+});
 
 // 颜色映射
 const colors = {
@@ -33,72 +46,105 @@ const priority = {
     '其他': 7,
 };
 
-const oneDayKeywords = { 1: [], 2: [], 3: [], 4: [] };
+// 渲染今天
+randerDay(new Date());
 
-const todayDate = now.getFullYear()
-    + ('0' + (now.getMonth() + 1)).slice(-2)
-    + ('0' + now.getDate()).slice(-2);
+function randerDay(date) {
+    document.getElementById('currentDate').textContent =
+        `${date.getFullYear()} 年 ${date.getMonth() + 1} 月 ${date.getDate()} 日`;
 
-for (const quarterDayNum of [1, 2, 3, 4]) {
-    // 从后端获取数据
-    try {
-        fetch(`jsondata/${todayDate}-${quarterDayNum}.json`)
-            .then(r => r.json())
-            .then(quarterDayWordsList => {
-                oneDayKeywords[quarterDayNum] = quarterDayWordsList.sort((a, b) => {
-                    if (priority[a.sign] < priority[b.sign]) return true;
-                    if (priority[a.sign] > priority[b.sign]) return false;
-                    if (priority[a.sign] = priority[b.sign]) return priority[a.kind] > priority[b.kind];
+    const oneDayKeywords = { 1: [], 2: [], 3: [], 4: [] };
+
+    const dateCode = date.getFullYear()
+        + ('0' + (date.getMonth() + 1)).slice(-2)
+        + ('0' + date.getDate()).slice(-2);
+
+    for (const quarterDayNum of [1, 2, 3, 4]) {
+        try {
+            fetch(`../out/${dateCode}-${quarterDayNum}.json`)
+                .then(r => r.json())
+                .then(quarterDayWordsList => {
+                    oneDayKeywords[quarterDayNum] = quarterDayWordsList.sort((a, b) => {
+                        if (priority[a.sign] < priority[b.sign]) return true;
+                        if (priority[a.sign] > priority[b.sign]) return false;
+                        if (priority[a.sign] = priority[b.sign]) return priority[a.kind] > priority[b.kind];
+                    });
+                })
+                .catch(() => {
+                    console.log(`File ${dateCode}-${quarterDayNum}.json doesn't exist!`);
+                })
+                .finally(() => {
+                    randerQuarterDay(quarterDayNum);
                 });
-                randerQuarterDay(quarterDayNum);
+        } catch (error) {
+            // rander
+            randerQuarterDay(quarterDayNum);
+        }
+    }
+
+    // 渲染 1/4 时间线
+    function randerQuarterDay(quarterDayNum) {
+        const hourBlock = document.getElementById(`quarterday${quarterDayNum}`);
+        // clean
+        hourBlock.querySelectorAll('.keyword-item').forEach(e => e.remove());
+
+        oneDayKeywords[quarterDayNum].forEach(keyword => {
+            const keywordItem = document.createElement('div');
+            keywordItem.className = 'keyword-item';
+            keywordItem.textContent = keyword.word;
+            keywordItem.style.backgroundColor = colors[keyword.kind];
+
+            // 根据重要性设置文字颜色
+            if (keyword.sign === 'critical') {
+                keywordItem.style.fontWeight = 'bold';
+            }
+
+            keywordItem.style.borderLeft = `6px solid ${colors[keyword.sign]}`;
+
+            // 鼠标事件
+            keywordItem.addEventListener('pointermove', (e) => {
+                tooltip.style.display = 'block';
+                tooltip.style.left = `${e.pageX + 10}px`;
+                tooltip.style.top = `${e.pageY + 10}px`;
+                tooltip.innerHTML = `<strong>${keyword.word}</strong><br>${keyword.desc}<br><em>${keyword.sign === 'critical' ? '关键' : keyword.sign === 'urgent' ? '紧急' : '重要'} · ${keyword.kind}</em>`;
             });
-    } catch (error) {
-        console.log(`File ${todayDate}-${quarterDayNum} doesn't exist!`);
+
+            keywordItem.addEventListener('pointerleave', () => {
+                tooltip.style.display = 'none';
+            });
+
+            keywordItem.addEventListener('click', () => {
+                blurbox.style.display = 'flex';
+                blurbox.innerHTML = `<strong>${keyword.word}</strong><br>${keyword.desc}<br><em>${keyword.sign === 'critical' ? '关键' : keyword.sign === 'urgent' ? '紧急' : '重要'} · ${keyword.kind}</em>`;
+            });
+
+            hourBlock.appendChild(keywordItem);
+        });
+
+        // 如果没有关键词，显示提示
+        if (oneDayKeywords[quarterDayNum].length === 0) {
+            const emptyMsg = document.createElement('div');
+            emptyMsg.className = 'keyword-item empty';
+            emptyMsg.textContent = 'Nothing happened?';
+            emptyMsg.style.color = '#999';
+            emptyMsg.style.fontStyle = 'italic';
+            hourBlock.appendChild(emptyMsg);
+        }
     }
 }
 
-// 渲染时间线
-function randerQuarterDay(quarterDayNum) {
-    const hourBlock = document.getElementById(`quarterday${quarterDayNum}`);
 
-    oneDayKeywords[quarterDayNum].forEach(keyword => {
-        const keywordItem = document.createElement('div');
-        keywordItem.className = 'keyword-item';
-        keywordItem.textContent = keyword.word;
-        keywordItem.style.backgroundColor = colors[keyword.kind];
+{
+    let dayOffset = 0;
+    const oneDaysTime = 86400000;
 
-        // 根据重要性设置文字颜色
-        if (keyword.sign === 'critical') {
-            keywordItem.style.fontWeight = 'bold';
-        }
-
-        keywordItem.style.borderLeft = `6px solid ${colors[keyword.sign]}`;
-
-        // 鼠标事件
-        keywordItem.addEventListener('pointermove', (e) => {
-            tooltip.style.display = 'block';
-            tooltip.style.left = `${e.pageX + 10}px`;
-            tooltip.style.top = `${e.pageY + 10}px`;
-            tooltip.innerHTML = `<strong>${keyword.word}</strong><br>${keyword.desc}<br><em>${keyword.sign === 'critical' ? '关键' : keyword.sign === 'urgent' ? '紧急' : '重要'}</em> · <em>${keyword.kind}</em>`;
-        });
-
-        keywordItem.addEventListener('pointerleave', () => {
-            tooltip.style.display = 'none';
-        });
-
-        hourBlock.appendChild(keywordItem);
+    document.getElementById('preday').addEventListener('click', () => {
+        dayOffset--;
+        randerDay(new Date(Date.now() + dayOffset * oneDaysTime));
     });
 
-    // 如果没有关键词，显示提示
-    if (oneDayKeywords[quarterDayNum].length === 0) {
-        const emptyMsg = document.createElement('div');
-        emptyMsg.classList.add('keyword-item');
-        emptyMsg.classList.add('empty');
-        emptyMsg.textContent = 'Nothing happened?';
-        emptyMsg.style.color = '#999';
-        emptyMsg.style.fontStyle = 'italic';
-        hourBlock.appendChild(emptyMsg);
-    }
-
-    timeline.appendChild(hourBlock);
+    document.getElementById('nextday').addEventListener('click', () => {
+        dayOffset++;
+        randerDay(new Date(Date.now() + dayOffset * oneDaysTime));
+    });
 }
