@@ -9,6 +9,7 @@ import 'lib/weibo.dart' as weibo;
 import 'lib/zhihu.dart' as zhihu;
 
 import 'package:dio/dio.dart';
+
 // in/
 //   - deepseek-api.key
 //   - zhihu-cookie.key
@@ -21,16 +22,21 @@ void main() async {
     return;
   }
 
-  // await generateWords();
-
+  // Loop
   while (true) {
-    await generateWords();
-    log('Get ready to sleep for 3 hours.');
-    sleep(Duration(hours: 3));
+    final wasSuccess = await generateWords();
+
+    if (wasSuccess) {
+      log('Get ready to sleep for 3 hours.');
+      sleep(const Duration(hours: 3));
+    } else {
+      log('Get ready to sleep for 3 minutes.');
+      sleep(const Duration(minutes: 3));
+    }
   }
 }
 
-Future<void> generateWords() async {
+Future<bool> generateWords() async {
   final dio = Dio();
   final String? biliData = await bili.getStringData(dio);
   log('Got bili: ${biliData?.length}');
@@ -63,7 +69,15 @@ Future<void> generateWords() async {
       '${makeFileName()}.json',
       JsonEncoder.withIndent('    ').convert(eventList),
     );
+
+    saveToJsonFile(
+      'last_update.txt',
+      DateTime.now().millisecondsSinceEpoch.toString(),
+    );
+
+    return true;
   } catch (e) {
-    log('Error: $e');
+    log('JSON respond error! Returning false to the loop.');
+    return false;
   }
 }

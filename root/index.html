@@ -60,21 +60,22 @@
 
         <div class="timeline" id="timeline">
             <div id="quarterday1" class="hour-block">
-                <div class="hour-header">凌晨</div>
+                <div class="hour-header" title="0:00 - 6:00">凌晨</div>
             </div>
             <div id="quarterday2" class="hour-block">
-                <div class="hour-header">上午</div>
+                <div class="hour-header" title="6:00 - 12:00">上午</div>
             </div>
             <div id="quarterday3" class="hour-block">
-                <div class="hour-header">下午</div>
+                <div class="hour-header" title="12:00 - 18:00">下午</div>
             </div>
             <div id="quarterday4" class="hour-block">
-                <div class="hour-header">夜晚</div>
+                <div class="hour-header" title="18:00 - 24:00">夜晚</div>
             </div>
         </div>
 
-        <h3><button id="preday"><</button>  <span class="date-header" id="currentDate"></span>  <button id="nextday">></button></h3>
+        <h3><button id="preday"><</button>  <span class="date-header" id="currentdate"></span>  <button id="nextday">></button></h3>
         <h3>AI 社会事件梳理，仅供参考，数据来源：知乎、哔哩哔哩、百度、抖音、微博</h3>
+        <h3>上次更新：<span id="lastupdate"></span></h3>
     </div>
 
     <div class="tooltip" id="tooltip"></div>

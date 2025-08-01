@@ -1,14 +1,19 @@
-const test_server = 'https://timelemon.qzz.io/';
+const test_server = 'https://timelemon.qzz.io';
 
 const timeline = document.getElementById('timeline');
 const tooltip = document.getElementById('tooltip');
 const blurbox = document.getElementById('blurbox');
 let ifMoveWhileClick = false;
 blurbox.addEventListener('pointerdown', () => {
+    const d = Date.now();
+
     const up = () => {
         blurbox.removeEventListener('pointermove', move);
         blurbox.removeEventListener('pointerup', up);
-        blurbox.style.display = 'none';
+
+        if (Date.now() - d < 1000) {
+            blurbox.style.display = 'none';
+        }
     }
 
     const move = () => {
@@ -48,18 +53,22 @@ const priority = {
     '其他': 7,
 };
 
-// 渲染今天
+function toTwoString(num) {
+    return ('0' + num).slice(-2);
+}
+
+// 初始渲染今天
 randerDay(new Date());
 
 function randerDay(date) {
-    document.getElementById('currentDate').textContent =
-        `${date.getFullYear()} 年 ${date.getMonth() + 1} 月 ${date.getDate()} 日`;
+    document.getElementById('currentdate').textContent =
+        `${date.getFullYear()} 年 ${toTwoString(date.getMonth() + 1)} 月 ${toTwoString(date.getDate())} 日`;
 
     const oneDayKeywords = { 1: [], 2: [], 3: [], 4: [] };
 
     const dateCode = date.getFullYear()
-        + ('0' + (date.getMonth() + 1)).slice(-2)
-        + ('0' + date.getDate()).slice(-2);
+        + toTwoString(date.getMonth() + 1)
+        + toTwoString(date.getDate());
 
     for (const quarterDayNum of [1, 2, 3, 4]) {
         try {
@@ -149,4 +158,13 @@ function randerDay(date) {
         dayOffset++;
         randerDay(new Date(Date.now() + dayOffset * oneDaysTime));
     });
+}
+
+{
+    fetch(`${test_server}/last_update.txt`)
+        .then(r => r.text())
+        .then(timeStamp => {
+            const d = new Date(Number(timeStamp));
+            document.getElementById('lastupdate').textContent = `${toTwoString(d.getMonth() + 1)}/${toTwoString(d.getDate())} ${toTwoString(d.getHours())}:${toTwoString(d.getMinutes())}:${toTwoString(d.getSeconds())}`;
+        });
 }
