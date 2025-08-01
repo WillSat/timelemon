@@ -1,3 +1,4 @@
+import '../utils.dart';
 import 'package:dio/dio.dart';
 
 const weiboPrompt = '##《微博热搜榜》优先级低';
@@ -24,9 +25,9 @@ Future<String?> getStringData(Dio dio) async {
   } catch (e) {
     // 错误处理
     if (e is DioException) {
-      print('Dio error: $e');
+      log('Request weibo error: $e');
     } else {
-      print('Unexpected error: $e');
+      log('Unexpected error: $e');
     }
     return null;
   }

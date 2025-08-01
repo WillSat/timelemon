@@ -1,4 +1,5 @@
 import 'dart:io';
+import '../utils.dart';
 import 'package:dio/dio.dart';
 
 const zhihuPrompt = '##《知乎热搜榜》优先级高';
@@ -34,9 +35,9 @@ Future<String?> getStringData(Dio dio) async {
   } catch (e) {
     // 错误处理
     if (e is DioException) {
-      print('Dio error: $e');
+      log('Request zhihu error: $e');
     } else {
-      print('Unexpected error: $e');
+      log('Unexpected error: $e');
     }
     return null;
   }

@@ -1,3 +1,5 @@
+const test_server = 'http://147.79.59.37:1024';
+
 const timeline = document.getElementById('timeline');
 const tooltip = document.getElementById('tooltip');
 const blurbox = document.getElementById('blurbox');
@@ -61,7 +63,7 @@ function randerDay(date) {
 
     for (const quarterDayNum of [1, 2, 3, 4]) {
         try {
-            fetch(`../out/${dateCode}-${quarterDayNum}.json`)
+            fetch(`${test_server}/${dateCode}-${quarterDayNum}.json`)
                 .then(r => r.json())
                 .then(quarterDayWordsList => {
                     oneDayKeywords[quarterDayNum] = quarterDayWordsList.sort((a, b) => {
