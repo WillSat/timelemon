@@ -1,4 +1,4 @@
-const test_server = 'http://147.79.59.37:1024';
+const test_server = 'https://timelemon.qzz.io/';
 
 const timeline = document.getElementById('timeline');
 const tooltip = document.getElementById('tooltip');

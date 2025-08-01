@@ -11,7 +11,7 @@ const sysMsg = '''你是一个社会事件分析专家，从热搜条目中选�
 3.kind分类严谨；sign重要性评估准确。甄别剔除娱乐新闻；
 4.kind可选：[政治,经济,社会民生,公共安全,文化,科技,其他]；sign可选: [important(值得关注),urgent(影响较大事件),critical(战争级别,尽量不使用)]；
 5.条目数量不限，符合上述条件都可以；
-6.纯文本JSON格式单行输出，禁止输出```json之类的修饰内容''';
+6.禁止输出```json，纯文本JSON格式单行输出''';
 
 // DeepSeek API Key
 final apiKey = File('in/deepseek-api.key').readAsStringSync();
