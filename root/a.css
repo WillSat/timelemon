@@ -141,6 +141,7 @@ h3 {
 
 #blurbox {
     position: fixed;
+    z-index: 99;
     /* Safari */
     top: -100dvh;
     width: 100dvw;

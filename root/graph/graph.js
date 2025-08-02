@@ -10,12 +10,13 @@
 // Physics parameters
 const params = {
     repulsion: 10000,
+    repulsionDistance: 140,
     linkDistance: 80,
     linkStrength: 0.2,
     friction: 0.35,
     gravity: 0,
-    centerStrength: 0.04,
-    dragStrength: 0.1
+    centerStrength: 0.01,
+    dragStrength: 0.8
 };
 
 window.randerGraph = (graphContainer, nodes) => {
@@ -111,7 +112,7 @@ window.randerGraph = (graphContainer, nodes) => {
                 const dy = node2.y - node1.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
-                if (distance > 0) {
+                if (distance > 0 && distance < params.repulsionDistance) {
                     const force = params.repulsion / (distance * distance * 0.5);
                     const fx = force * dx / distance;
                     const fy = force * dy / distance;
@@ -240,12 +241,13 @@ window.randerGraph = (graphContainer, nodes) => {
             // 视觉反馈
             e.target.classList.add('dragging');
 
-            document.addEventListener('pointermove', dragNode);
+            document.addEventListener('pointermove', dragNode, { passive: false });
             document.addEventListener('pointerup', stopDrag);
         }
     }
 
     function dragNode(e) {
+        e.preventDefault();
         if (isDragging && draggedNode) {
             const containerRect = graphContainer.getBoundingClientRect();
             draggedNode.targetX = e.clientX - containerRect.left - offsetX;

@@ -20,6 +20,10 @@
     user-select: none;
     z-index: 2;
     transition: filter .5s;
+
+    &:hover {
+        z-index: 10;
+    }
 }
 
 
