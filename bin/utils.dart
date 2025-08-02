@@ -3,7 +3,9 @@ import 'dart:io';
 
 void log(String msg) {
   final dt = DateTime.now();
-  print('[${DateFormat('MM/dd hh:mm:ss').format(dt)}] $msg');
+  print(
+    '[${dt.month.toString().padLeft(2, '0')}/${dt.day.toString().padLeft(2, '0')} ${dt.hour.toString().padLeft(2, '0')}:${dt.minute.toString().padLeft(2, '0')}:${dt.second.toString().padLeft(2, '0')}] $msg',
+  );
 }
 
 String makeFileName() {

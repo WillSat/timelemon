@@ -3,6 +3,7 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
     background-color: #fff;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 h1 {
@@ -127,6 +129,8 @@ h3 {
     z-index: 100;
     display: none;
     /* block */
+
+    transition: all .2s ease-out;
 
     &>strong {
         font-size: 16px;

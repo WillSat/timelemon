@@ -24,46 +24,57 @@ void main() async {
 
   // Loop
   while (true) {
+    final st = DateTime.now().millisecondsSinceEpoch;
     final wasSuccess = await generateWords();
 
     if (wasSuccess) {
-      log('Get ready to sleep for 3 hours.');
-      sleep(const Duration(hours: 3));
+      final sleepTime =
+          Duration(hours: 3) -
+          Duration(milliseconds: DateTime.now().millisecondsSinceEpoch - st);
+      log('Get ready to sleep for $sleepTime hours.');
+      sleep(sleepTime);
     } else {
-      log('Get ready to sleep for 3 minutes.');
-      sleep(const Duration(minutes: 3));
+      final sleepTime =
+          Duration(minutes: 3) -
+          Duration(milliseconds: DateTime.now().millisecondsSinceEpoch - st);
+      log('Get ready to sleep for $sleepTime minutes.');
+      sleep(sleepTime);
     }
   }
 }
 
 Future<bool> generateWords() async {
   final dio = Dio();
-  final String? biliData = await bili.getStringData(dio);
-  log('Got bili: ${biliData?.length}');
-  final String? baiduData = await baidu.getStringData(dio);
-  log('Got baidu: ${baiduData?.length}');
-  final String? douyinData = await douyin.getStringData(dio);
-  log('Got douyin: ${douyinData?.length}');
-  final String? weiboData = await weibo.getStringData(dio);
-  log('Got weibo: ${weiboData?.length}');
-  final String? zhihuData = await zhihu.getStringData(dio);
-  log('Got zhihu: ${zhihuData?.length}');
+
+  final results = await Future.wait([
+    bili.getStringData(dio),
+    baidu.getStringData(dio),
+    douyin.getStringData(dio),
+    weibo.getStringData(dio),
+    zhihu.getStringData(dio),
+  ]);
+
+  log(
+    'Got result: bl:${results[0]?.length} bd:${results[1]?.length} dy:${results[2]?.length} wb:${results[3]?.length} zh:${results[4]?.length}',
+  );
 
   final String data = [
-    biliData,
-    baiduData,
-    douyinData,
-    weiboData,
-    zhihuData,
+    results[0],
+    results[1],
+    results[2],
+    results[3],
+    results[4],
   ].join('\n\n');
 
   // saveToJsonFile('${makeFileName()}-RAW.txt', data);
 
   String resJson = '';
+
   // AI Summary
   try {
     resJson = await callDeepSeek(data);
-    final eventList = jsonDecode(resJson);
+    final List? eventList = jsonDecode(resJson)['list'];
+    if (eventList == null) throw Error();
 
     saveToJsonFile(
       '${makeFileName()}.json',

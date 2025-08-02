@@ -14,7 +14,7 @@ Future<String?> getStringData(Dio dio) async {
       options: Options(
         headers: {
           'Accept': 'application/json, text/plain, */*',
-          // Zhihu Account: timelemon_user
+          // Zhihu token: z_c0=...
           'Cookie': apiKey,
           'Host': 'www.zhihu.com',
           'Referer': 'https://www.zhihu.com/hot',
