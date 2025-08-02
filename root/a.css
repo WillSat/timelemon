@@ -3,7 +3,6 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .container {
@@ -14,7 +13,6 @@ body {
     background-color: #fff;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: scroll;
 }
 
 h1 {
@@ -143,8 +141,10 @@ h3 {
 
 #blurbox {
     position: fixed;
+    /* Safari */
+    top: -100dvh;
     width: 100dvw;
-    height: 100dvh;
+    height: 300dvh;
     padding: 10px;
     box-sizing: border-box;
     background-color: #0008;
