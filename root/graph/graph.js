@@ -78,7 +78,7 @@ window.randerGraph = (graphContainer, nodes) => {
             nodeElements[node.id] = nodeElement;
 
             // Add event listeners
-            nodeElement.addEventListener('mousedown', startDrag);
+            nodeElement.addEventListener('pointerdown', startDrag);
         });
 
         // Update link positions
@@ -222,6 +222,12 @@ window.randerGraph = (graphContainer, nodes) => {
         if (draggedNode) {
             isDragging = true;
 
+            graphContainer.querySelectorAll('.node').forEach(ele => {
+                if (draggedNode.id === ele.nid) return;
+                if (draggedNode.links && draggedNode.links.includes(ele.nid)) return;
+                ele.style.filter = 'brightness(.3)';
+            });
+
             const containerRect = graphContainer.getBoundingClientRect();
             offsetX = e.clientX - containerRect.left - draggedNode.x;
             offsetY = e.clientY - containerRect.top - draggedNode.y;
@@ -234,8 +240,8 @@ window.randerGraph = (graphContainer, nodes) => {
             // 视觉反馈
             e.target.classList.add('dragging');
 
-            document.addEventListener('mousemove', dragNode);
-            document.addEventListener('mouseup', stopDrag);
+            document.addEventListener('pointermove', dragNode);
+            document.addEventListener('pointerup', stopDrag);
         }
     }
 
@@ -254,10 +260,11 @@ window.randerGraph = (graphContainer, nodes) => {
             delete draggedNode.targetY;
             nodeElements[draggedNode.id].classList.remove('dragging');
         }
+        graphContainer.querySelectorAll('.node').forEach(ele => ele.style.filter = '');
         isDragging = false;
         draggedNode = null;
-        document.removeEventListener('mousemove', dragNode);
-        document.removeEventListener('mouseup', stopDrag);
+        document.removeEventListener('pointermove', dragNode);
+        document.removeEventListener('pointerup', stopDrag);
     }
 
     // Handle window resize

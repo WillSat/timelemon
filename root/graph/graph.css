@@ -19,6 +19,7 @@
     cursor: grab;
     user-select: none;
     z-index: 2;
+    transition: filter .5s;
 }
 
 
