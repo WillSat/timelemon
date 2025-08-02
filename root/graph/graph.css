@@ -1,0 +1,35 @@
+.graph-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #202020;
+}
+
+.node {
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    cursor: grab;
+    user-select: none;
+    z-index: 2;
+}
+
+
+.node:active {
+    cursor: grabbing;
+}
+
+.link {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(to right, #fff1, #fff6 40%);
+    transform-origin: 0 0;
+    z-index: 1;
+}

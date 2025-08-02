@@ -3,13 +3,14 @@ const test_server = 'https://timelemon.qzz.io';
 const timeline = document.getElementById('timeline');
 const tooltip = document.getElementById('tooltip');
 const blurbox = document.getElementById('blurbox');
-let ifMoveWhileClick = false;
+let blurbox_ifMoveWhileClick = false;
 blurbox.addEventListener('pointerdown', () => {
     const d = Date.now();
 
     const up = () => {
         blurbox.removeEventListener('pointermove', move);
         blurbox.removeEventListener('pointerup', up);
+        blurbox_ifMoveWhileClick = false;
 
         if (Date.now() - d < 1000) {
             blurbox.style.display = 'none';
@@ -19,7 +20,7 @@ blurbox.addEventListener('pointerdown', () => {
     const move = () => {
         blurbox.removeEventListener('pointermove', move);
         blurbox.removeEventListener('pointerup', up);
-        ifMoveWhileClick = true;
+        blurbox_ifMoveWhileClick = true;
     }
 
     blurbox.addEventListener('pointerup', up);
@@ -38,6 +39,10 @@ const colors = {
     'important': '#00B0FF',
     'urgent': '#FF9100',
     'critical': '#FF3D00',
+    // graph
+    'important_bg': 'hsla(199, 80%, 90%)',
+    'urgent_bg': 'hsla(34, 80%, 90%)',
+    'critical_bg': 'hsla(14, 80%, 90%)',
 };
 
 const priority = {
@@ -98,6 +103,7 @@ function randerDay(date) {
         const hourBlock = document.getElementById(`quarterday${quarterDayNum}`);
         // clean
         hourBlock.querySelectorAll('.keyword-item').forEach(e => e.remove());
+        hourBlock.querySelectorAll('.graph-container').forEach(e => e.remove());
 
         oneDayKeywords[quarterDayNum].forEach(keyword => {
             const keywordItem = document.createElement('div');
@@ -140,6 +146,13 @@ function randerDay(date) {
             emptyMsg.style.color = '#999';
             emptyMsg.style.fontStyle = 'italic';
             hourBlock.appendChild(emptyMsg);
+        } else {
+            const quarterDayGraph = document.createElement('div');
+            quarterDayGraph.className = 'graph-container';
+            hourBlock.appendChild(quarterDayGraph);
+
+            // 渲染网状图
+            randerQuarterDayGraph(quarterDayGraph, oneDayKeywords[quarterDayNum]);
         }
     }
 }
@@ -160,11 +173,65 @@ function randerDay(date) {
     });
 }
 
-{
+{ // 获取更新时间
     fetch(`${test_server}/last_update.txt`)
         .then(r => r.text())
         .then(timeStamp => {
             const d = new Date(Number(timeStamp));
             document.getElementById('lastupdate').textContent = `${toTwoString(d.getMonth() + 1)}/${toTwoString(d.getDate())} ${toTwoString(d.getHours())}:${toTwoString(d.getMinutes())}:${toTwoString(d.getSeconds())}`;
         });
+}
+
+
+function randerQuarterDayGraph(container, data) {
+    const allKindNodes = [
+        { id: '政治', size: 60, backgroundColor: '#FFCCBC' },
+        { id: '经济', size: 60, backgroundColor: '#FFE0B2' },
+        { id: '社会民生', size: 60, backgroundColor: '#F0F4C3' },
+        { id: '公共安全', size: 60, backgroundColor: '#B2DFDB' },
+        { id: '文化', size: 60, backgroundColor: '#BBDEFB' },
+        { id: '科技', size: 60, backgroundColor: '#C5CAE9' },
+        { id: '其他', size: 60, backgroundColor: '#CFD8DC' },
+    ]
+
+    const kindNodes = allKindNodes.filter(o => data.find(p => p.kind === o.id));
+
+    const eventNodes = data.map(e => {
+        // return { id: e.word, name: e.word, size: 80, color: colors[e.sign + '_bg'], links: [e.kind] }
+        return { id: e.word, size: 50, color: colors[e.sign + '_bg'], links: [e.kind] }
+    });
+
+    window.randerGraph(container, [...kindNodes, ...eventNodes]);
+
+    container.addEventListener('pointerdown', () => {
+
+    });
+
+    let container_ifMoveWhileClick = false;
+
+    container.addEventListener('pointerdown', () => {
+        const d = Date.now();
+
+        const up = () => {
+            container.removeEventListener('pointermove', move);
+            container.removeEventListener('pointerup', up);
+            container_ifMoveWhileClick = false;
+
+            if (Date.now() - d < 1000) {
+                if (document.fullscreenElement === container) {
+                    document.exitFullscreen()
+                }
+                container.requestFullscreen();
+            }
+        }
+
+        const move = () => {
+            container.removeEventListener('pointermove', move);
+            container.removeEventListener('pointerup', up);
+            container_ifMoveWhileClick = true;
+        }
+
+        container.addEventListener('pointerup', up);
+        container.addEventListener('pointermove', move);
+    });
 }

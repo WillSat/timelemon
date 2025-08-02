@@ -50,6 +50,10 @@ TimeLemon 是一个用 `Dart` 编写的工具，用于爬取多个平台的热�
 
 [Github Pages](https://willsat.github.io/timelemon/root/)
 
+| 四分之一天可视化 | 网状图 |
+|---|---|
+|<img src='img/quarterDay.png'>|<img src='img/graph.png'>|
+
 ## 贡献
 
 欢迎提交 [Issue](https://github.com/WillSat/timelemon/issues) 和 Pull Request！
