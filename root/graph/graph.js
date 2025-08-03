@@ -8,29 +8,28 @@
 // }];
 
 // Physics parameters
-const params = {
-    repulsion: 10000,
-    linkDistance: 80,
-    linkStrength: 0.2,
-    friction: 0.35,
-    gravity: 0,
-    centerStrength: 0.01,
-    dragStrength: 0.8
+const physicsParams = {
+    repulsion: 100000,
+    maxRepulsionDistance2: 30000,
+    linkDistance: 100,
+    linkStrength: 0.4,
+    friction: 0.1,
+    centerStrength: 0.18,
+    dragStrength: 1.2,
 };
 
 window.randerGraph = (graphContainer, nodes) => {
     // Initialize positions
-    {
-        const centerX = graphContainer.clientWidth / 2;
-        const centerY = graphContainer.clientHeight / 2;
+    var centerX = graphContainer.clientWidth / 2;
+    var centerY = graphContainer.clientHeight / 2;
 
-        nodes.forEach(node => {
-            node.x = centerX + (Math.random() - 0.5) * graphContainer.clientWidth * 0.8;
-            node.y = centerY + (Math.random() - 0.5) * graphContainer.clientHeight * 0.8;
-            node.vx = 0;
-            node.vy = 0;
-        });
-    }
+    for (let i = 0; i < nodes.length; i++) {
+        const node = nodes[i];
+        node.x = centerX + (Math.random() - 0.5) * graphContainer.clientWidth * 0.8;
+        node.y = centerY + (Math.random() - 0.5) * graphContainer.clientHeight * 0.8;
+        node.vx = 0;
+        node.vy = 0;
+    };
 
     // Create DOM elements for nodes and links
     const nodeElements = {};
@@ -90,12 +89,11 @@ window.randerGraph = (graphContainer, nodes) => {
         linkElements.forEach(link => {
             const dx = link.target.x - link.source.x;
             const dy = link.target.y - link.source.y;
-            const length = Math.sqrt(dx * dx + dy * dy);
 
-            link.element.style.width = `${length}px`;
-            link.element.style.left = `${link.source.x}px`;
-            link.element.style.top = `${link.source.y}px`;
-            link.element.style.transform = `rotate(${Math.atan2(dy, dx)}rad)`;
+            link.element.style.width = Math.sqrt(dx * dx + dy * dy) + 'px';
+            link.element.style.left = link.source.x + 'px';
+            link.element.style.top = link.source.y + 'px';
+            link.element.style.transform = 'rotate(' + Math.atan2(dy, dx) + 'rad)';
         });
     }
 
@@ -103,43 +101,45 @@ window.randerGraph = (graphContainer, nodes) => {
     function simulate() {
         // Apply repulsion between all nodes
         for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-                const node1 = nodes[i];
+            const node = nodes[i];
+            for (let j = 0; j < nodes.length; j++) {
+                if (i <= j) continue;
                 const node2 = nodes[j];
+                if (node.links && node.links.includes(node2.id)) continue;
 
-                const dx = node2.x - node1.x;
-                const dy = node2.y - node1.y;
-                const distance = Math.sqrt(dx * dx + dy * dy);
+                const dx = node2.x - node.x;
+                const dy = node2.y - node.y;
 
-                if (distance > 0) {
-                    const force = params.repulsion / (distance * distance * 0.5);
-                    const fx = force * dx / distance;
-                    const fy = force * dy / distance;
+                const distance2 = dx * dx + dy * dy;
+                if (distance2 > physicsParams.maxRepulsionDistance2) continue;
 
-                    if (!node1.fixed) {
-                        node1.vx -= fx;
-                        node1.vy -= fy;
-                    }
-                    if (!node2.fixed) {
-                        node2.vx += fx;
-                        node2.vy += fy;
-                    }
+                const distance = Math.sqrt(distance2);
+                const force = physicsParams.repulsion / distance2;
+                const fx = force * dx / distance;
+                const fy = force * dy / distance;
+
+                if (!node.fixed) {
+                    node.vx -= fx;
+                    node.vy -= fy;
+                }
+                if (!node2.fixed) {
+                    node2.vx += fx;
+                    node2.vy += fy;
                 }
             }
-        }
 
-        // Apply attraction for linked nodes
-        nodes.forEach(node => {
+            // Apply attraction for linked nodes
             if (node.links) {
-                node.links.forEach(linkId => {
-                    const targetNode = nodes.find(n => n.id === linkId);
+                for (let i = 0; i < node.links.length; i++) {
+                    const targetNode = nodes.find(n => n.id === node.links[i]);
                     if (targetNode) {
                         const dx = targetNode.x - node.x;
                         const dy = targetNode.y - node.y;
                         const distance = Math.sqrt(dx * dx + dy * dy);
-
+                        
                         if (distance > 0) {
-                            const force = (distance - params.linkDistance) * params.linkStrength;
+                            const force = (distance - physicsParams.linkDistance) * physicsParams.linkStrength;
+
                             const fx = force * dx / distance;
                             const fy = force * dy / distance;
 
@@ -153,51 +153,42 @@ window.randerGraph = (graphContainer, nodes) => {
                             }
                         }
                     }
-                });
+                }
             }
-        });
 
-        // Apply forces to nodes
-        const centerX = graphContainer.clientWidth / 2;
-        const centerY = graphContainer.clientHeight / 2;
-
-        nodes.forEach(node => {
             if (node.fixed) {
-                // 对于被拖拽的节点，应用弹性力回到鼠标位置
+                // 被拖拽的节点
                 const dx = node.targetX - node.x;
                 const dy = node.targetY - node.y;
-                node.vx += dx * params.dragStrength;
-                node.vy += dy * params.dragStrength;
+                node.vx += dx * physicsParams.dragStrength;
+                node.vy += dy * physicsParams.dragStrength;
             } else {
                 // Pull toward center
                 const dx = centerX - node.x;
                 const dy = centerY - node.y;
-                node.vx += dx * params.centerStrength;
-                node.vy += dy * params.centerStrength;
-
-                // Apply gravity
-                node.vy += params.gravity;
+                node.vx += dx * physicsParams.centerStrength;
+                node.vy += dy * physicsParams.centerStrength;
             }
 
             // Apply velocity with friction
-            node.vx *= params.friction;
-            node.vy *= params.friction;
+            node.vx *= physicsParams.friction;
+            node.vy *= physicsParams.friction;
             node.x += node.vx;
             node.y += node.vy;
 
             // Boundary checks
-            const padding = 50;
-            if (node.x < padding) node.vx += padding - node.x;
-            if (node.x > graphContainer.clientWidth - padding) node.vx += graphContainer.clientWidth - padding - node.x;
-            if (node.y < padding) node.vy += padding - node.y;
-            if (node.y > graphContainer.clientHeight - padding) node.vy += graphContainer.clientHeight - padding - node.y;
+            const padding = 35;
+            if (node.x < padding) node.vx += padding - node.x
+            else if (node.x > graphContainer.clientWidth - padding) node.vx += graphContainer.clientWidth - padding - node.x;
+            if (node.y < padding) node.vy += padding - node.y
+            else if (node.y > graphContainer.clientHeight - padding) node.vy += graphContainer.clientHeight - padding - node.y;
 
             // Update DOM position
             if (nodeElements[node.id]) {
-                nodeElements[node.id].style.left = `${node.x - node.size / 2}px`;
-                nodeElements[node.id].style.top = `${node.y - node.size / 2}px`;
+                nodeElements[node.id].style.left = node.x - node.size / 2 + 'px';
+                nodeElements[node.id].style.top = node.y - node.size / 2 + 'px';
             }
-        });
+        }
 
         // Update links
         updateLinks();
@@ -205,7 +196,9 @@ window.randerGraph = (graphContainer, nodes) => {
 
     // Animation loop
     function animate() {
+        // const st = Date.now();
         simulate();
+        // console.log(Date.now() - st);
         requestAnimationFrame(animate);
     }
 
@@ -270,6 +263,9 @@ window.randerGraph = (graphContainer, nodes) => {
 
     // Handle window resize
     window.addEventListener('resize', () => {
+        centerX = graphContainer.clientWidth / 2;
+        centerY = graphContainer.clientHeight / 2;
+
         // Adjust nodes that might be outside new boundaries
         nodes.forEach(node => {
             if (node.x < 0) node.x = 0;
