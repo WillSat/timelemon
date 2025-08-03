@@ -18,6 +18,8 @@ const physicsParams = {
     dragStrength: 1.2,
 };
 
+const eventList = 'ontouchstart' in window ? ['touchstart', 'touchmove', 'touchend', 'touchcancel'] : ['pointerdown', 'pointermove', 'pointerup', 'pointercancel'];
+
 window.randerGraph = (graphContainer, nodes) => {
     // Initialize positions
     var centerX = graphContainer.clientWidth / 2;
@@ -77,7 +79,7 @@ window.randerGraph = (graphContainer, nodes) => {
             nodeElements[node.id] = nodeElement;
 
             // Add event listeners
-            nodeElement.addEventListener('pointerdown', startDrag);
+            nodeElement.addEventListener(eventList[0], startDrag);
         });
 
         // Update link positions
@@ -233,8 +235,9 @@ window.randerGraph = (graphContainer, nodes) => {
             // 视觉反馈
             e.target.classList.add('dragging');
 
-            document.addEventListener('pointermove', dragNode, { passive: false });
-            document.addEventListener('pointerup', stopDrag);
+            document.addEventListener(eventList[1], dragNode, { passive: false });
+            document.addEventListener(eventList[2], stopDrag);
+            document.addEventListener(eventList[3], stopDrag);
         }
     }
 
@@ -257,8 +260,9 @@ window.randerGraph = (graphContainer, nodes) => {
         graphContainer.querySelectorAll('.node').forEach(ele => ele.style.filter = '');
         isDragging = false;
         draggedNode = null;
-        document.removeEventListener('pointermove', dragNode);
-        document.removeEventListener('pointerup', stopDrag);
+        document.removeEventListener(eventList[1], dragNode);
+        document.removeEventListener(eventList[2], stopDrag);
+        document.removeEventListener(eventList[3], stopDrag);
     }
 
     // Handle window resize
