@@ -4,6 +4,7 @@ import 'utils.dart';
 import 'ds_api.dart';
 import 'lib/bili.dart' as bili;
 import 'lib/baidu.dart' as baidu;
+import 'lib/bing.dart' as bing;
 import 'lib/douyin.dart' as douyin;
 import 'lib/weibo.dart' as weibo;
 import 'lib/zhihu.dart' as zhihu;
@@ -13,6 +14,7 @@ import 'package:dio/dio.dart';
 // in/
 //   - deepseek-api.key
 //   - zhihu-cookie.key
+//   - prompt.system.txt
 
 void main() async {
   if (!File('in/deepseek-api.key').existsSync() ||
@@ -49,13 +51,14 @@ Future<bool> generateWords() async {
   final results = await Future.wait([
     bili.getStringData(dio),
     baidu.getStringData(dio),
+    bing.getStringData(dio),
     douyin.getStringData(dio),
     weibo.getStringData(dio),
     zhihu.getStringData(dio),
   ]);
 
   log(
-    'Got result: bl:${results[0]?.length} bd:${results[1]?.length} dy:${results[2]?.length} wb:${results[3]?.length} zh:${results[4]?.length}',
+    'Got result: bili:${results[0]?.length} baidu:${results[1]?.length} bing:${results[2]?.length} douyin:${results[3]?.length} weibo:${results[4]?.length} zhihu:${results[5]?.length}',
   );
 
   final String data = [
@@ -64,6 +67,7 @@ Future<bool> generateWords() async {
     results[2],
     results[3],
     results[4],
+    results[5],
   ].join('\n\n');
 
   // saveToJsonFile('${makeFileName()}-RAW.txt', data);

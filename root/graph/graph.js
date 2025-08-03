@@ -10,7 +10,6 @@
 // Physics parameters
 const params = {
     repulsion: 10000,
-    repulsionDistance: 140,
     linkDistance: 80,
     linkStrength: 0.2,
     friction: 0.35,
@@ -112,7 +111,7 @@ window.randerGraph = (graphContainer, nodes) => {
                 const dy = node2.y - node1.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
-                if (distance > 0 && distance < params.repulsionDistance) {
+                if (distance > 0) {
                     const force = params.repulsion / (distance * distance * 0.5);
                     const fx = force * dx / distance;
                     const fy = force * dy / distance;
