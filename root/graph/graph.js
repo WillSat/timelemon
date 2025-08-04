@@ -18,7 +18,9 @@ const physicsParams = {
     dragStrength: 1.2,
 };
 
-const eventList = 'ontouchstart' in window ? ['touchstart', 'touchmove', 'touchend', 'touchcancel'] : ['pointerdown', 'pointermove', 'pointerup', 'pointercancel'];
+const isTouch = 'ontouchstart' in window;
+
+const eventList = isTouch ? ['touchstart', 'touchmove', 'touchend', 'touchcancel'] : ['pointerdown', 'pointermove', 'pointerup', 'pointercancel'];
 
 window.randerGraph = (graphContainer, nodes) => {
     // Initialize positions
@@ -224,8 +226,9 @@ window.randerGraph = (graphContainer, nodes) => {
             });
 
             const containerRect = graphContainer.getBoundingClientRect();
-            offsetX = e.clientX - containerRect.left - draggedNode.x;
-            offsetY = e.clientY - containerRect.top - draggedNode.y;
+            const [clientX, clientY] = getclientXY(e);
+            offsetX = clientX - containerRect.left - draggedNode.x;
+            offsetY = clientY - containerRect.top - draggedNode.y;
 
             // 设置拖拽状态
             draggedNode.fixed = true;
@@ -245,8 +248,9 @@ window.randerGraph = (graphContainer, nodes) => {
         e.preventDefault();
         if (isDragging && draggedNode) {
             const containerRect = graphContainer.getBoundingClientRect();
-            draggedNode.targetX = e.clientX - containerRect.left - offsetX;
-            draggedNode.targetY = e.clientY - containerRect.top - offsetY;
+            const [clientX, clientY] = getclientXY(e);
+            draggedNode.targetX = clientX - containerRect.left - offsetX;
+            draggedNode.targetY = clientY - containerRect.top - offsetY;
         }
     }
 
@@ -263,6 +267,10 @@ window.randerGraph = (graphContainer, nodes) => {
         document.removeEventListener(eventList[1], dragNode);
         document.removeEventListener(eventList[2], stopDrag);
         document.removeEventListener(eventList[3], stopDrag);
+    }
+
+    function getclientXY(e) {
+        return isTouch ? [e.touches[0].clientX, e.touches[0].clientY] : [e.clientX, e.clientY];
     }
 
     // Handle window resize

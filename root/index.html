@@ -11,73 +11,73 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>🍋 𝐓𝐢𝐦𝐞 𝐋𝐞𝐦𝐨𝐧 🍋</h1>
+    <h1>🍋 𝐓𝐢𝐦𝐞 𝐋𝐞𝐦𝐨𝐧 🍋</h1>
 
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #00B0FF;"></div>
-                <span>重要</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #FF9100;"></div>
-                <span>紧急</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #FF3D00;"></div>
-                <span>关键</span>
-            </div>
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #00B0FF;"></div>
+            <span>重要</span>
         </div>
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #FFCCBC;"></div>
-                <span>政治</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #FFE0B2;"></div>
-                <span>经济</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #F0F4C3;"></div>
-                <span>社会民生</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #B2DFDB;"></div>
-                <span>公共安全</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #BBDEFB;"></div>
-                <span>文化</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #C5CAE9;"></div>
-                <span>科技</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #CFD8DC;"></div>
-                <span>其他</span>
-            </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FF9100;"></div>
+            <span>紧急</span>
         </div>
-
-        <div class="timeline" id="timeline">
-            <div id="quarterday1" class="hour-block">
-                <div class="hour-header" title="0:00 - 6:00">凌晨</div>
-            </div>
-            <div id="quarterday2" class="hour-block">
-                <div class="hour-header" title="6:00 - 12:00">上午</div>
-            </div>
-            <div id="quarterday3" class="hour-block">
-                <div class="hour-header" title="12:00 - 18:00">下午</div>
-            </div>
-            <div id="quarterday4" class="hour-block">
-                <div class="hour-header" title="18:00 - 24:00">夜晚</div>
-            </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FF3D00;"></div>
+            <span>关键</span>
         </div>
-
-        <h3><button id="preday"><</button>  <span class="date-header" id="currentdate"></span>  <button id="nextday">></button></h3>
-        <h3>AI 社会事件梳理，仅供参考，数据来源：知乎、哔哩哔哩、百度、抖音、微博</h3>
-        <h3>上次更新：<span id="lastupdate"></span></h3>
     </div>
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFCCBC;"></div>
+            <span>政治</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #FFE0B2;"></div>
+            <span>经济</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #F0F4C3;"></div>
+            <span>社会民生</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #B2DFDB;"></div>
+            <span>公共安全</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #BBDEFB;"></div>
+            <span>文化</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #C5CAE9;"></div>
+            <span>科技</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #CFD8DC;"></div>
+            <span>其他</span>
+        </div>
+    </div>
+
+    <div class="timeline" id="timeline">
+        <div id="quarterday1" class="hour-block">
+            <div class="hour-header" title="0:00 - 6:00">凌晨</div>
+        </div>
+        <div id="quarterday2" class="hour-block">
+            <div class="hour-header" title="6:00 - 12:00">上午</div>
+        </div>
+        <div id="quarterday3" class="hour-block">
+            <div class="hour-header" title="12:00 - 18:00">下午</div>
+        </div>
+        <div id="quarterday4" class="hour-block">
+            <div class="hour-header" title="18:00 - 24:00">夜晚</div>
+        </div>
+    </div>
+
+    <h3><button id="preday"><</button>
+        <span class="date-header" id="currentdate"></span>
+    <button id="nextday">></button></h3>
+    <h3>AI 社会事件梳理，仅供参考，数据来源：知乎、哔哩哔哩、百度、抖音、微博</h3>
+    <h3>上次更新：<span id="lastupdate"></span></h3>
 
     <div class="tooltip" id="tooltip"></div>
     <div class="blurbox" id="blurbox"></div>
